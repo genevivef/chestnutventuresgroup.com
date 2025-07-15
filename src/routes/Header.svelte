@@ -3,9 +3,10 @@
     import { navigationMenuTriggerStyle } from "$lib/components/ui/navigation-menu/navigation-menu-trigger.svelte";
 </script>
 
-<header class="flex flex-row items-center justify-between p-6">
-    <a class="md:basis-1/6" href="/" aria-label="Home">
-        <enhanced:img class="max-h-12 w-auto rounded-lg" src="$lib/assets/cvg-logo.png" alt="Chestnut Ventures Group Logo" />
+<header class="flex flex-row items-center justify-between p-4 md:p-6">
+    <a class="flex flex-row items-center gap-4" href="/" aria-label="Home">
+        <enhanced:img class="max-h-10 md:max-h-12 w-auto rounded-lg" src="$lib/assets/cvg-logo.png" alt="Chestnut Ventures Group Logo" />
+        <span class="text-lg md:text-2xl font-semibold">Chestnut Ventures Group</span>
     </a>
 
     <NavigationMenu.Root class="max-md:hidden">
@@ -27,5 +28,5 @@
         </NavigationMenu.List>
     </NavigationMenu.Root>
 
-    <div class="md:basis-1/6"></div>
+    <div class="md:hidden"></div>
 </header>
