@@ -1,6 +1,7 @@
 <script lang="ts">
     import * as NavigationMenu from "$lib/components/ui/navigation-menu";
     import { navigationMenuTriggerStyle } from "$lib/components/ui/navigation-menu/navigation-menu-trigger.svelte";
+    import { smoothScroll } from "$lib/utils";
 </script>
 
 <header class="flex flex-row items-center justify-between p-4 md:p-6">
@@ -11,10 +12,10 @@
 
     <NavigationMenu.Root class="max-md:hidden">
         <NavigationMenu.List>
-            <NavigationMenu.Item>
+            <NavigationMenu.Item onclick={() => smoothScroll("about")}>
                 <NavigationMenu.Link>
                     {#snippet child()}
-                        <a href="#about" class={navigationMenuTriggerStyle()}>About</a>
+                        <span class={["hover:cursor-pointer", navigationMenuTriggerStyle()]}>About</span>
                     {/snippet}
                 </NavigationMenu.Link>
             </NavigationMenu.Item>
