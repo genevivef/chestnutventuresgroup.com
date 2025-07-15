@@ -2,6 +2,7 @@
     import { Button } from "$lib/components/ui/button";
     import * as Card from "$lib/components/ui/card";
     import { Badge } from "$lib/components/ui/badge";
+    import { Separator } from "$lib/components/ui/separator";
 </script>
 
 <div class="w-full flex flex-col items-center gap-8 bg-linear-to-b from-emerald-300 from-50% p-32">
@@ -12,7 +13,7 @@
     </Button>
 </div>
 
-<div class="flex flex-col md:flex-row items-center gap-32 px-16">
+<div class="flex flex-col md:flex-row md:items-center gap-32 px-16">
     <div class="md:basis-1/2 flex flex-col gap-8">
         <h3 class="text-4xl font-semibold">Investing across frontiers</h3>
         <p class="text-lg mb-8">From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning ambitious ideas into category-defining businesses.</p>
@@ -50,3 +51,49 @@
         </Card.Root>
     </div>
 </div>
+
+<Separator />
+
+<div class="flex flex-col gap-8 px-16">
+    <h2 class="text-2xl font-semibold">Our team</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <Card.Root>
+            <Card.Header>
+                <Card.Title class="text-xl">Tiffany</Card.Title>
+            </Card.Header>
+            <Card.Content>
+                <p class="text-lg pb-4">Role</p>
+                <p class="text-sm text-muted-foreground">
+                    Tiffany Phan brings two decades of experience bridging institutional capital and high-growth technology. She previously co-managed a $4.5B portfolio at Stamos Capital Partners, leading global investment underwriting across hedge funds, private equity, and venture-backed companies. Earlier, she oversaw $13B in client assets at Deutsche Bank's investment management group.
+                    <br /><br />
+                    On the operating side, Tiffany has built and scaled finance, fundraising, and international operations at SaaS companies including UserTesting (IPO), Bestow, Machinify, and Nuffsaid (acquired by ClickUp). She holds a B.S. in Engineering and Applied Mathematics from Columbia University.
+                    <br /><br />
+                    When not deep in financial models or investment due diligence, Tiffany can be found chasing big ideas, bigger mountains, or her three kids—rarely all at once, and always without coffee.
+                </p>
+            </Card.Content>
+        </Card.Root>
+
+        <Card.Root>
+            <Card.Header>
+                <Card.Title class="text-xl">Ricky</Card.Title>
+            </Card.Header>
+            <Card.Content>
+                <p class="text-lg pb-4">Role</p>
+                <p class="text-sm text-muted-foreground">With over 20 years of experience in executive leadership roles, Ricky has a diverse experience in various roles and different companies over the years. He has been instrumental in helping scale organizations in high growth tech companies in SaaS, gaming and crypto industry. In 2018 Ricky started as a Limited Partner at Maple VC and has made significant investments in companies such as Deepen.Ai, Leanplum, Saga, GetDor (acquired by Constellation Labs).</p>
+            </Card.Content>
+        </Card.Root>
+
+        <Card.Root>
+            <Card.Header>
+                <Card.Title class="text-xl">Genevive</Card.Title>
+            </Card.Header>
+            <Card.Content>
+                <p class="text-lg pb-4">Role</p>
+                <p class="text-sm text-muted-foreground">Her expertise is helping companies recruit stellar talent and preparing the organization to scale.</p>
+            </Card.Content>
+        </Card.Root>
+    </div>
+</div>
+
+<Separator />
