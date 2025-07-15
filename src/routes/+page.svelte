@@ -3,6 +3,7 @@
     import * as Card from "$lib/components/ui/card";
     import { Badge } from "$lib/components/ui/badge";
     import { Separator } from "$lib/components/ui/separator";
+    import * as Carousel from "$lib/components/ui/carousel";
 </script>
 
 <div class="w-full flex flex-col items-center gap-8 bg-linear-to-b from-emerald-300 from-50% p-32">
@@ -94,6 +95,47 @@
             </Card.Content>
         </Card.Root>
     </div>
+</div>
+
+<Separator />
+
+<div class="px-16">
+    <Carousel.Root>
+        <div class="flex justify-between pb-8">
+            <h2 class="text-2xl font-semibold">Portfolio</h2>
+            <div class="flex gap-4">
+                <Carousel.Previous />
+                <Carousel.Next />
+            </div>
+        </div>
+
+        <Carousel.Content>
+            <Carousel.Item class="basis-1/2 md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/deepen.png" alt="Deepen.AI" />
+                <p class="pt-4">Deepen AI</p>
+            </Carousel.Item>
+            <Carousel.Item class="basis-1/2 md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/transastra.png" alt="TransAstra" />
+                <p class="pt-4">TransAstra</p>
+            </Carousel.Item>
+            <Carousel.Item class="basis-1/2 md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor" />
+                <p class="pt-4">Dor</p>
+            </Carousel.Item>
+            <Carousel.Item class="basis-1/2 md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/leanplum.png" alt="Leanplum" />
+                <p class="pt-4">Leanplum</p>
+            </Carousel.Item>
+            <Carousel.Item class="basis-1/2 md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga" />
+                <p class="pt-4">Saga</p>
+            </Carousel.Item>
+            <Carousel.Item class="basis-1/2 md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine" />
+                <p class="pt-4">PathCision Medicine</p>
+            </Carousel.Item>
+        </Carousel.Content>
+    </Carousel.Root>
 </div>
 
 <Separator />
