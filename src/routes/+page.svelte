@@ -16,129 +16,133 @@
     </Button>
 </div>
 
-<div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32 px-8 md:px-16" id="learn-more">
-    <div class="md:basis-1/2 flex flex-col gap-8">
-        <h3 class="text-4xl font-semibold">Investing across frontiers</h3>
-        <p class="text-lg mb-8">From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning ambitious ideas into category-defining businesses.</p>
+<div class="max-w-320 flex flex-col gap-16 px-6 md:px-16">
 
-        <h3 class="text-4xl font-semibold">Speed without interference</h3>
-        <p class="text-lg">We back founders early and help them move faster. Whether it's building the first team, landing early customers, or shaping product strategy, we're here to support the journey—without getting in the way.</p>
-    </div>
+    <div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32 pt-16" id="learn-more">
+        <div class="md:basis-1/2 flex flex-col gap-8">
+            <h3 class="text-4xl font-semibold">Investing across frontiers</h3>
+            <p class="text-lg mb-8">From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning ambitious ideas into category-defining businesses.</p>
 
-    <div class="md:basis-1/2 flex flex-col gap-16 md:gap-32">
-        <Card.Root>
-            <Card.Header>
-                <Card.Title class="text-2xl">Sectors</Card.Title>
-            </Card.Header>
-            <Card.Content>
-                <div class="grid grid-cols-2 xl:flex gap-4">
-                    <Badge variant="secondary" class="text-lg">AI</Badge>
-                    <Badge variant="secondary" class="text-lg">Fintech</Badge>
-                    <Badge variant="secondary" class="text-lg">Vertical SaaS</Badge>
-                    <Badge variant="secondary" class="text-lg">Infrastructure</Badge>
-                </div>
-            </Card.Content>
-        </Card.Root>
-
-        <Card.Root>
-            <Card.Header>
-                <Card.Title class="text-2xl">Investment focus</Card.Title>
-            </Card.Header>
-            <Card.Content>
-                <div class="grid grid-cols-2 xl:flex gap-4">
-                    <Badge class="text-lg">Pre-seed</Badge>
-                    <Badge class="text-lg">Seed</Badge>
-                    <Badge class="text-lg">Series A</Badge>
-                </div>
-            </Card.Content>
-        </Card.Root>
-    </div>
-</div>
-
-<Separator />
-
-<div class="px-8 md:px-16" id="about">
-    <Carousel.Root>
-        <div class="flex justify-between pb-8">
-            <h2 class="text-2xl font-semibold">Portfolio</h2>
-            <div class="flex gap-4">
-                <Carousel.Previous />
-                <Carousel.Next />
-            </div>
+            <h3 class="text-4xl font-semibold">Speed without interference</h3>
+            <p class="text-lg">We back founders early and help them move faster. Whether it's building the first team, landing early customers, or shaping product strategy, we're here to support the journey—without getting in the way.</p>
         </div>
 
-        <Carousel.Content>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/deepen.png" alt="Deepen.AI" />
-                <p class="pt-4">Deepen AI</p>
-            </Carousel.Item>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/transastra.png" alt="TransAstra" />
-                <p class="pt-4">TransAstra</p>
-            </Carousel.Item>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor" />
-                <p class="pt-4">Dor</p>
-            </Carousel.Item>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/leanplum.png" alt="Leanplum" />
-                <p class="pt-4">Leanplum</p>
-            </Carousel.Item>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga" />
-                <p class="pt-4">Saga</p>
-            </Carousel.Item>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine" />
-                <p class="pt-4">PathCision Medicine</p>
-            </Carousel.Item>
-        </Carousel.Content>
-    </Carousel.Root>
-</div>
+        <div class="md:basis-1/2 flex flex-col gap-16 md:gap-32">
+            <Card.Root>
+                <Card.Header>
+                    <Card.Title class="text-2xl">Sectors</Card.Title>
+                </Card.Header>
+                <Card.Content>
+                    <div class="grid grid-cols-2 xl:flex gap-4">
+                        <Badge variant="secondary" class="text-lg">AI</Badge>
+                        <Badge variant="secondary" class="text-lg">Fintech</Badge>
+                        <Badge variant="secondary" class="text-lg">Vertical SaaS</Badge>
+                        <Badge variant="secondary" class="text-lg">Infrastructure</Badge>
+                    </div>
+                </Card.Content>
+            </Card.Root>
 
-<Separator />
-
-<div class="flex flex-col gap-8 px-8 md:px-16">
-    <h2 class="text-2xl font-semibold">Our team</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <Card.Root>
-            <Card.Header>
-                <div class="w-full aspect-square border rounded-lg mb-6"></div>
-                <Card.Title class="text-xl">Tiffany Phan</Card.Title>
-            </Card.Header>
-            <Card.Content>
-                <p class="text-lg pb-6">Founder & Managing Partner</p>
-                <p class="text-sm text-muted-foreground">
-                    Tiffany Phan brings two decades of experience bridging institutional capital and high-growth technology. She previously co-managed a $4.5B portfolio at Stamos Capital Partners, leading global investment underwriting across hedge funds, private equity, and venture-backed companies. Earlier, she oversaw $13B in client assets at Deutsche Bank's investment management group.
-                    <br /><br />
-                    On the operating side, Tiffany has built and scaled finance, fundraising, and international operations at SaaS companies including UserTesting (IPO), Bestow, Machinify, and Nuffsaid (acquired by ClickUp).
-                </p>
-            </Card.Content>
-        </Card.Root>
-
-        <Card.Root>
-            <Card.Header>
-                <enhanced:img class="w-full aspect-square rounded-lg mb-6" src="$lib/assets/team/ricky-fiel.jpeg" alt="Ricky Fiel" />
-                <Card.Title class="text-xl">Ricky Fiel</Card.Title>
-            </Card.Header>
-            <Card.Content>
-                <p class="text-lg pb-6">Co-Founder & General Partner</p>
-                <p class="text-sm text-muted-foreground">With over 20 years of experience in executive leadership roles, Ricky has a diverse experience in various roles and different companies over the years. He has been instrumental in helping scale organizations in high growth tech companies in SaaS, gaming and crypto industry. In 2018 Ricky started as a Limited Partner at Maple VC and has made significant investments in companies such as Deepen.Ai, Leanplum, Saga, GetDor (acquired by Constellation Labs).</p>
-            </Card.Content>
-        </Card.Root>
-
-        <Card.Root>
-            <Card.Header>
-                <enhanced:img class="w-full aspect-square rounded-lg mb-6" src="$lib/assets/team/genevive-fiel.jpeg" alt="Genevive Fiel" />
-                <Card.Title class="text-xl">Genevive Fiel</Card.Title>
-            </Card.Header>
-            <Card.Content>
-                <p class="text-lg pb-6">Founder & Managing Partner</p>
-                <p class="text-sm text-muted-foreground">Her expertise is helping companies recruit stellar talent and preparing the organization to scale.</p>
-            </Card.Content>
-        </Card.Root>
+            <Card.Root>
+                <Card.Header>
+                    <Card.Title class="text-2xl">Investment focus</Card.Title>
+                </Card.Header>
+                <Card.Content>
+                    <div class="grid grid-cols-2 xl:flex gap-4">
+                        <Badge class="text-lg">Pre-seed</Badge>
+                        <Badge class="text-lg">Seed</Badge>
+                        <Badge class="text-lg">Series A</Badge>
+                    </div>
+                </Card.Content>
+            </Card.Root>
+        </div>
     </div>
-</div>
 
-<Separator />
+    <Separator />
+
+    <div id="about">
+        <Carousel.Root>
+            <div class="flex justify-between pb-8">
+                <h2 class="text-2xl font-semibold">Portfolio</h2>
+                <div class="flex gap-4">
+                    <Carousel.Previous />
+                    <Carousel.Next />
+                </div>
+            </div>
+
+            <Carousel.Content>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/deepen.png" alt="Deepen.AI" />
+                    <p class="pt-4">Deepen AI</p>
+                </Carousel.Item>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/transastra.png" alt="TransAstra" />
+                    <p class="pt-4">TransAstra</p>
+                </Carousel.Item>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor" />
+                    <p class="pt-4">Dor</p>
+                </Carousel.Item>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/leanplum.png" alt="Leanplum" />
+                    <p class="pt-4">Leanplum</p>
+                </Carousel.Item>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga" />
+                    <p class="pt-4">Saga</p>
+                </Carousel.Item>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine" />
+                    <p class="pt-4">PathCision Medicine</p>
+                </Carousel.Item>
+            </Carousel.Content>
+        </Carousel.Root>
+    </div>
+
+    <Separator />
+
+    <div class="flex flex-col gap-8">
+        <h2 class="text-2xl font-semibold">Our team</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card.Root>
+                <Card.Header>
+                    <div class="w-full aspect-square border rounded-lg mb-6"></div>
+                    <Card.Title class="text-xl">Tiffany Phan</Card.Title>
+                </Card.Header>
+                <Card.Content>
+                    <p class="text-lg pb-6">Founder & Managing Partner</p>
+                    <p class="text-sm text-muted-foreground">
+                        Tiffany Phan brings two decades of experience bridging institutional capital and high-growth technology. She previously co-managed a $4.5B portfolio at Stamos Capital Partners, leading global investment underwriting across hedge funds, private equity, and venture-backed companies. Earlier, she oversaw $13B in client assets at Deutsche Bank's investment management group.
+                        <br /><br />
+                        On the operating side, Tiffany has built and scaled finance, fundraising, and international operations at SaaS companies including UserTesting (IPO), Bestow, Machinify, and Nuffsaid (acquired by ClickUp).
+                    </p>
+                </Card.Content>
+            </Card.Root>
+
+            <Card.Root>
+                <Card.Header>
+                    <enhanced:img class="w-full aspect-square rounded-lg mb-6" src="$lib/assets/team/ricky-fiel.jpeg" alt="Ricky Fiel" />
+                    <Card.Title class="text-xl">Ricky Fiel</Card.Title>
+                </Card.Header>
+                <Card.Content>
+                    <p class="text-lg pb-6">Co-Founder & General Partner</p>
+                    <p class="text-sm text-muted-foreground">With over 20 years of experience in executive leadership roles, Ricky has a diverse experience in various roles and different companies over the years. He has been instrumental in helping scale organizations in high growth tech companies in SaaS, gaming and crypto industry. In 2018 Ricky started as a Limited Partner at Maple VC and has made significant investments in companies such as Deepen.Ai, Leanplum, Saga, GetDor (acquired by Constellation Labs).</p>
+                </Card.Content>
+            </Card.Root>
+
+            <Card.Root>
+                <Card.Header>
+                    <enhanced:img class="w-full aspect-square rounded-lg mb-6" src="$lib/assets/team/genevive-fiel.jpeg" alt="Genevive Fiel" />
+                    <Card.Title class="text-xl">Genevive Fiel</Card.Title>
+                </Card.Header>
+                <Card.Content>
+                    <p class="text-lg pb-6">Founder & Managing Partner</p>
+                    <p class="text-sm text-muted-foreground">Her expertise is helping companies recruit stellar talent and preparing the organization to scale.</p>
+                </Card.Content>
+            </Card.Root>
+        </div>
+    </div>
+
+    <Separator />
+
+</div>

@@ -7,6 +7,6 @@
 
 <Header />
 
-<div class="flex flex-col gap-16">
+<div class="flex flex-col items-center">
 	{@render children()}
 </div>
