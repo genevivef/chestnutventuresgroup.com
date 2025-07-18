@@ -111,9 +111,7 @@
                 <p class="text-sm text-muted-foreground">
                     Tiffany Phan brings two decades of experience bridging institutional capital and high-growth technology. She previously co-managed a $4.5B portfolio at Stamos Capital Partners, leading global investment underwriting across hedge funds, private equity, and venture-backed companies. Earlier, she oversaw $13B in client assets at Deutsche Bank's investment management group.
                     <br /><br />
-                    On the operating side, Tiffany has built and scaled finance, fundraising, and international operations at SaaS companies including UserTesting (IPO), Bestow, Machinify, and Nuffsaid (acquired by ClickUp). She holds a B.S. in Engineering and Applied Mathematics from Columbia University.
-                    <br /><br />
-                    When not deep in financial models or investment due diligence, Tiffany can be found chasing big ideas, bigger mountains, or her three kids—rarely all at once, and always without coffee.
+                    On the operating side, Tiffany has built and scaled finance, fundraising, and international operations at SaaS companies including UserTesting (IPO), Bestow, Machinify, and Nuffsaid (acquired by ClickUp).
                 </p>
             </Card.Content>
         </Card.Root>
