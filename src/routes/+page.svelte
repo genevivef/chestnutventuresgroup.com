@@ -104,10 +104,11 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Card.Root>
             <Card.Header>
-                <Card.Title class="text-xl">Tiffany</Card.Title>
+                <div class="w-full aspect-square border rounded-lg mb-6"></div>
+                <Card.Title class="text-xl">Tiffany Phan</Card.Title>
             </Card.Header>
             <Card.Content>
-                <p class="text-lg pb-4">Role</p>
+                <p class="text-lg pb-6">Founder & Managing Partner</p>
                 <p class="text-sm text-muted-foreground">
                     Tiffany Phan brings two decades of experience bridging institutional capital and high-growth technology. She previously co-managed a $4.5B portfolio at Stamos Capital Partners, leading global investment underwriting across hedge funds, private equity, and venture-backed companies. Earlier, she oversaw $13B in client assets at Deutsche Bank's investment management group.
                     <br /><br />
@@ -118,20 +119,22 @@
 
         <Card.Root>
             <Card.Header>
-                <Card.Title class="text-xl">Ricky</Card.Title>
+                <enhanced:img class="w-full aspect-square rounded-lg mb-6" src="$lib/assets/team/ricky-fiel.jpeg" alt="Ricky Fiel" />
+                <Card.Title class="text-xl">Ricky Fiel</Card.Title>
             </Card.Header>
             <Card.Content>
-                <p class="text-lg pb-4">Role</p>
+                <p class="text-lg pb-6">Co-Founder & General Partner</p>
                 <p class="text-sm text-muted-foreground">With over 20 years of experience in executive leadership roles, Ricky has a diverse experience in various roles and different companies over the years. He has been instrumental in helping scale organizations in high growth tech companies in SaaS, gaming and crypto industry. In 2018 Ricky started as a Limited Partner at Maple VC and has made significant investments in companies such as Deepen.Ai, Leanplum, Saga, GetDor (acquired by Constellation Labs).</p>
             </Card.Content>
         </Card.Root>
 
         <Card.Root>
             <Card.Header>
-                <Card.Title class="text-xl">Genevive</Card.Title>
+                <enhanced:img class="w-full aspect-square rounded-lg mb-6" src="$lib/assets/team/genevive-fiel.jpeg" alt="Genevive Fiel" />
+                <Card.Title class="text-xl">Genevive Fiel</Card.Title>
             </Card.Header>
             <Card.Content>
-                <p class="text-lg pb-4">Role</p>
+                <p class="text-lg pb-6">Founder & Managing Partner</p>
                 <p class="text-sm text-muted-foreground">Her expertise is helping companies recruit stellar talent and preparing the organization to scale.</p>
             </Card.Content>
         </Card.Root>
