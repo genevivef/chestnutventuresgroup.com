@@ -106,7 +106,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card.Root>
                 <Card.Header>
-                    <div class="w-full aspect-square border rounded-lg mb-6"></div>
+                    <enhanced:img class="w-full aspect-auto rounded-lg mb-6" src="$lib/assets/team/tiffany-phan.jpeg" alt="Tiffany Phan" />
                     <Card.Title class="text-xl">Tiffany Phan</Card.Title>
                 </Card.Header>
                 <Card.Content>
