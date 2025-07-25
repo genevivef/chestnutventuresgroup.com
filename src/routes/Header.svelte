@@ -12,7 +12,7 @@
 
     <NavigationMenu.Root class="max-md:hidden">
         <NavigationMenu.List>
-            <NavigationMenu.Item onclick={() => smoothScroll("about")}>
+            <NavigationMenu.Item onclick={() => smoothScroll("learn-more")}>
                 <NavigationMenu.Link>
                     {#snippet child()}
                         <span class={["hover:cursor-pointer", navigationMenuTriggerStyle()]}>About</span>
@@ -22,7 +22,7 @@
             <NavigationMenu.Item>
                 <NavigationMenu.Link>
                     {#snippet child()}
-                        <a href="#contact" class={navigationMenuTriggerStyle()}>Contact</a>
+                        <a href="/contact" class={navigationMenuTriggerStyle()}>Contact</a>
                     {/snippet}
                 </NavigationMenu.Link>
             </NavigationMenu.Item>
