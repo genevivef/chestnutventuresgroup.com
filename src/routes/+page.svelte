@@ -59,7 +59,7 @@
 
     <Separator />
 
-    <Carousel.Root>
+    <Carousel.Root class="max-md:max-w-80">
         <div class="flex justify-between pb-8">
             <h2 class="text-2xl font-semibold">Portfolio</h2>
             <div class="flex gap-4">
