@@ -59,44 +59,42 @@
 
     <Separator />
 
-    <div id="about">
-        <Carousel.Root>
-            <div class="flex justify-between pb-8">
-                <h2 class="text-2xl font-semibold">Portfolio</h2>
-                <div class="flex gap-4">
-                    <Carousel.Previous />
-                    <Carousel.Next />
-                </div>
+    <Carousel.Root>
+        <div class="flex justify-between pb-8">
+            <h2 class="text-2xl font-semibold">Portfolio</h2>
+            <div class="flex gap-4">
+                <Carousel.Previous />
+                <Carousel.Next />
             </div>
+        </div>
 
-            <Carousel.Content>
-                <Carousel.Item class="basis-full md:basis-1/3">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/deepen.png" alt="Deepen.AI" />
-                    <p class="pt-4">Deepen AI</p>
-                </Carousel.Item>
-                <Carousel.Item class="basis-full md:basis-1/3">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/transastra.png" alt="TransAstra" />
-                    <p class="pt-4">TransAstra</p>
-                </Carousel.Item>
-                <Carousel.Item class="basis-full md:basis-1/3">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor" />
-                    <p class="pt-4">Dor</p>
-                </Carousel.Item>
-                <Carousel.Item class="basis-full md:basis-1/3">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/leanplum.png" alt="Leanplum" />
-                    <p class="pt-4">Leanplum</p>
-                </Carousel.Item>
-                <Carousel.Item class="basis-full md:basis-1/3">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga" />
-                    <p class="pt-4">Saga</p>
-                </Carousel.Item>
-                <Carousel.Item class="basis-full md:basis-1/3">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine" />
-                    <p class="pt-4">PathCision Medicine</p>
-                </Carousel.Item>
-            </Carousel.Content>
-        </Carousel.Root>
-    </div>
+        <Carousel.Content>
+            <Carousel.Item class="basis-full md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/deepen.png" alt="Deepen.AI" />
+                <p class="pt-4">Deepen AI</p>
+            </Carousel.Item>
+            <Carousel.Item class="basis-full md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/transastra.png" alt="TransAstra" />
+                <p class="pt-4">TransAstra</p>
+            </Carousel.Item>
+            <Carousel.Item class="basis-full md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor" />
+                <p class="pt-4">Dor</p>
+            </Carousel.Item>
+            <Carousel.Item class="basis-full md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/leanplum.png" alt="Leanplum" />
+                <p class="pt-4">Leanplum</p>
+            </Carousel.Item>
+            <Carousel.Item class="basis-full md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga" />
+                <p class="pt-4">Saga</p>
+            </Carousel.Item>
+            <Carousel.Item class="basis-full md:basis-1/3">
+                <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine" />
+                <p class="pt-4">PathCision Medicine</p>
+            </Carousel.Item>
+        </Carousel.Content>
+    </Carousel.Root>
 
     <Separator />
 
