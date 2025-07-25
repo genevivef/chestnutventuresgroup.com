@@ -85,7 +85,7 @@
                     <MailIcon />
                     <span class="text-lg">Email</span>
                 </div>
-                <a class="hover:text-emerald-500" href="/contact">email</a>
+                <a class="hover:text-emerald-500" href="mailto:info@chestnutventuresgroup.com">info@chestnutventuresgroup.com</a>
             </div>
         </div>
     </div>
