@@ -12,10 +12,10 @@
 
     <NavigationMenu.Root class="max-md:hidden">
         <NavigationMenu.List>
-            <NavigationMenu.Item onclick={() => smoothScroll("learn-more")}>
+            <NavigationMenu.Item>
                 <NavigationMenu.Link>
                     {#snippet child()}
-                        <span class={["hover:cursor-pointer", navigationMenuTriggerStyle()]}>About</span>
+                        <a href="/" class={navigationMenuTriggerStyle()}>Home</a>
                     {/snippet}
                 </NavigationMenu.Link>
             </NavigationMenu.Item>
