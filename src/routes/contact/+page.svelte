@@ -65,7 +65,7 @@
             <div bind:this={container} class="relative w-full h-64 overflow-hidden rounded-lg">
                 {#each leaves as leaf (leaf.id)}
                   <LeafIcon
-                        class="text-emerald-500 absolute transition-all duration-100 ease-linear"
+                        class="text-teal-500 absolute transition-all duration-100 ease-linear"
                         style="
                             left: {leaf.x}px;
                             top: {leaf.y}px;
@@ -81,11 +81,11 @@
             <h1 class="text-4xl font-semibold">Contact us</h1>
             <p class="text-lg">Interested in working together? We'd love to hear from you.</p>
             <div class="flex flex-col gap-4">
-                <div class="text-emerald-500 flex flex-row items-center gap-4">
+                <div class="text-teal-500 flex flex-row items-center gap-4">
                     <MailIcon />
                     <span class="text-lg">Email</span>
                 </div>
-                <a class="hover:text-emerald-500" href="mailto:info@chestnutventuresgroup.com">info@chestnutventuresgroup.com</a>
+                <a class="hover:text-teal-500" href="mailto:info@chestnutventuresgroup.com">info@chestnutventuresgroup.com</a>
             </div>
         </div>
     </div>

@@ -8,7 +8,7 @@
     import { smoothScroll } from "$lib/utils";
 </script>
 
-<div class="w-full flex flex-col items-center gap-8 bg-linear-to-b from-emerald-400 from-30% px-8 py-16 md:p-32">
+<div class="w-full flex flex-col items-center gap-8 bg-linear-to-b from-teal-400 dark:from-teal-800 from-30% px-8 py-16 md:p-32">
     <h1 class="text-4xl md:text-6xl font-semibold text-center text-shadow-sm">Backing builders of what's next.</h1>
     <p class="text-lg md:text-2xl text-center">We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies.</p>
     <Button class="h-12 text-lg md:text-xl hover:cursor-pointer" size="lg" onclick={() => smoothScroll("learn-more")}>
