@@ -4,7 +4,7 @@
     import { Badge } from "$lib/components/ui/badge";
     import { Separator } from "$lib/components/ui/separator";
     import * as Carousel from "$lib/components/ui/carousel";
-
+    import LinkedinIcon from "$lib/icons/linkedin.svelte";
     import { smoothScroll } from "$lib/utils";
 </script>
 
@@ -212,7 +212,12 @@
             <Card.Root>
                 <Card.Header>
                     <enhanced:img class="w-full aspect-square rounded-lg mb-6" src="$lib/assets/team/ricky-fiel.jpeg" alt="Ricky Fiel" />
-                    <Card.Title class="text-xl">Ricky Fiel</Card.Title>
+                    <div class="flex flex-row items-center justify-between gap-4">
+                        <Card.Title class="text-xl">Ricky Fiel</Card.Title>
+                        <Button class="p-2" size="icon" variant="outline" href="https://www.linkedin.com/in/rickyfiel" target="_blank" rel="noopener noreferrer">
+                            <LinkedinIcon />
+                        </Button>
+                    </div>
                 </Card.Header>
                 <Card.Content>
                     <p class="text-lg pb-6">Co-Founder & General Partner</p>
@@ -223,7 +228,12 @@
             <Card.Root>
                 <Card.Header>
                     <enhanced:img class="w-full aspect-square rounded-lg mb-6" src="$lib/assets/team/genevive-fiel.jpeg" alt="Genevive Fiel" />
-                    <Card.Title class="text-xl">Genevive Fiel</Card.Title>
+                    <div class="flex flex-row items-center justify-between gap-4">
+                        <Card.Title class="text-xl">Genevive Fiel</Card.Title>
+                        <Button class="p-2" size="icon" variant="outline" href="https://www.linkedin.com/in/genevive-fiel-4822866a" target="_blank" rel="noopener noreferrer">
+                            <LinkedinIcon />
+                        </Button>
+                    </div>
                 </Card.Header>
                 <Card.Content>
                     <p class="text-lg pb-6">Founder & Managing Partner</p>
