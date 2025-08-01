@@ -162,9 +162,9 @@
                 </a>
             </Carousel.Item>
             <Carousel.Item class="basis-full md:basis-1/3">
-                <a class="group flex flex-col gap-4" href="https://www.getdor.com/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor" />
-                    <p class="group-hover:underline text-lg font-semibold">Dor</p>
+                <a class="group flex flex-col gap-4" href="https://pathcisionmedicine.com/" target="_blank" rel="noopener noreferrer">
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine" />
+                    <p class="group-hover:underline text-lg font-semibold">PathCision Medicine</p>
                 </a>
             </Carousel.Item>
             <Carousel.Item class="basis-full md:basis-1/3">
@@ -180,9 +180,9 @@
                 </a>
             </Carousel.Item>
             <Carousel.Item class="basis-full md:basis-1/3">
-                <a class="group flex flex-col gap-4" href="https://pathcisionmedicine.com/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine" />
-                    <p class="group-hover:underline text-lg font-semibold">PathCision Medicine</p>
+                <a class="group flex flex-col gap-4" href="https://www.getdor.com/" target="_blank" rel="noopener noreferrer">
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor" />
+                    <p class="group-hover:underline text-lg font-semibold">Dor</p>
                 </a>
             </Carousel.Item>
         </Carousel.Content>
