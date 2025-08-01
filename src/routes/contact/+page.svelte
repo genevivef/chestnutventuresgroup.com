@@ -1,99 +1,56 @@
 <script lang="ts">
-    import { onMount } from "svelte";
+    import { Button } from "$lib/components/ui/button";
+    import * as Card from "$lib/components/ui/card";
+    import { toast } from "svelte-sonner";
     import MailIcon from "@lucide/svelte/icons/mail";
-    import LeafIcon from "@lucide/svelte/icons/leaf";
+    import CopyIcon from "@lucide/svelte/icons/copy";
 
-    let leaves: {
-        id: number;
-        x: number;
-        y: number;
-        rotation: number;
-        scale: number;
-        speed: number;
-        rotationSpeed: number;
-        verticalDrift: number;
-        opacity: number;
-    }[] = [];
-    let container;
-    let containerHeight = 256;
-    function createLeaf() {
-      return {
-        id: Math.random(),
-        x: -50,
-        y: Math.random() * (containerHeight - 24),
-        rotation: Math.random() * 360,
-        scale: Math.random() * 0.5 + 0.5,
-        speed: Math.random() * 2 + 1,
-        rotationSpeed: Math.random() * 4 - 2,
-        verticalDrift: Math.random() * 0.5 - 0.25,
-        opacity: 1
-      };
+    const email = "info@chestnutventuresgroup.com";
+    async function copyEmail() {
+        try {
+            await navigator.clipboard.writeText(email);
+        } catch {
+            toast.error("Failed to copy, please allow clipboard access in your browser settings.");
+            return;
+        }
+        toast.success("Email copied to clipboard!");
     }
-    function updateLeaves() {
-        leaves = leaves.map(leaf => ({
-            ...leaf,
-            x: leaf.x + leaf.speed,
-            y: leaf.y + leaf.verticalDrift,
-            rotation: leaf.rotation + leaf.rotationSpeed,
-            opacity: Math.max(0, 1 - (leaf.x / 800))
-        })).filter(leaf => leaf.x < 900 && leaf.opacity > 0.05);
-        if (Math.random() < 0.1 && leaves.length < 15) {
-            leaves = [...leaves, createLeaf()];
-        }
-    }
-    let animationFrame: number;
-    onMount(() => {
-        for (let i = 0; i < 5; i++) {
-            leaves = [...leaves, createLeaf()];
-        }
-        function animate() {
-            updateLeaves();
-            animationFrame = requestAnimationFrame(animate);
-        }
-        animate();
-        return () => {
-            if (animationFrame) {
-                cancelAnimationFrame(animationFrame);
-            }
-        };
-    });
 </script>
 
-<div class="max-w-320 w-full flex flex-col gap-16 px-6 md:px-16">
-    <div class="flex flex-row gap-16 py-32">
-        <div class="basis-1/2">
-            <div bind:this={container} class="relative w-full h-64 overflow-hidden rounded-lg">
-                {#each leaves as leaf (leaf.id)}
-                  <LeafIcon
-                        class="text-teal-500 absolute transition-all duration-100 ease-linear"
-                        style="
-                            left: {leaf.x}px;
-                            top: {leaf.y}px;
-                            transform: rotate({leaf.rotation}deg) scale({leaf.scale});
-                            opacity: {leaf.opacity};
-                        "
-                   />
-                {/each}
-            </div>
-        </div>
-
-        <div class="basis-1/2 flex flex-col gap-8">
-            <h1 class="text-4xl font-semibold">Contact us</h1>
-            <p class="text-lg">Interested in working together? We'd love to hear from you.</p>
-            <div class="flex flex-col gap-4">
-                <div class="text-teal-500 flex flex-row items-center gap-4">
-                    <MailIcon />
-                    <span class="text-lg">Email</span>
-                </div>
-                <a class="hover:text-teal-500" href="mailto:info@chestnutventuresgroup.com">info@chestnutventuresgroup.com</a>
-            </div>
-        </div>
-    </div>
+<div class="relative w-full h-[50vh]">
+    <enhanced:img class="w-full h-[50vh] object-cover object-center" src="$lib/assets/contact/background.jpg" alt="Contact us" />
+    <h1 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-4xl md:text-6xl text-white text-shadow-sm font-semibold">Contact us</h1>
 </div>
 
-<style>
-    @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-    }
-</style>
+<div class="max-w-320 w-full flex flex-col gap-16 px-6 md:px-16">
+    <div class="flex flex-col md:flex-row gap-32 py-32">
+        <div class="basis-1/2 flex flex-col gap-8">
+            <h2 class="text-4xl font-semibold">Who we are</h2>
+            <p>We're a venture firm that leads Pre-Seed, Seed, and Series A rounds in standout software companies. With a long-term perspective and a hands-on approach, we partner early and stay committed—helping founders build enduring businesses that are built to last.</p>
+            <p>We don't just write checks—we roll up our sleeves. From product and go-to-market to team-building and fundraising, we work side by side with exceptional founders turning bold ideas into category-defining companies.</p>
+        </div>
+
+        <Card.Root class="basis-1/2 bg-gradient-to-b from-teal-100 dark:from-teal-950">
+            <Card.Header>
+                <Card.Title class="text-2xl">Contact</Card.Title>
+            </Card.Header>
+            <Card.Content>
+                <p class="text-lg">Interested in working together? We'd love to hear from you.</p>
+            </Card.Content>
+            <Card.Footer>
+                <div class="flex flex-col gap-4">
+                    <div class="text-teal-500 flex flex-row items-center gap-4">
+                        <MailIcon />
+                        <span class="text-lg">Email</span>
+                    </div>
+                    <div class="flex flex-row items-center gap-4">
+                        <a class="hover:text-teal-500" href={`mailto:${email}`}>{email}</a>
+                        <Button size="icon" variant="outline" onclick={copyEmail}>
+                            <CopyIcon />
+                        </Button>
+                    </div>
+                </div>
+            </Card.Footer>
+        </Card.Root>
+    </div>
+</div>
