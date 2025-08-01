@@ -44,7 +44,7 @@
                         <span class="text-lg">Email</span>
                     </div>
                     <div class="flex flex-row items-center gap-4">
-                        <a class="hover:text-teal-500" href={`mailto:${email}`}>{email}</a>
+                        <a class="max-md:text-sm hover:text-teal-500" href={`mailto:${email}`}>{email}</a>
                         <Button size="icon" variant="outline" onclick={copyEmail}>
                             <CopyIcon />
                         </Button>

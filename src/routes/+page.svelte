@@ -8,7 +8,7 @@
     import { smoothScroll } from "$lib/utils";
 </script>
 
-<div class="w-full flex flex-col items-center gap-8 bg-linear-to-b from-teal-400 dark:from-teal-800 from-30% px-8 py-16 md:px-32 md:pt-48 md:pb-24">
+<div class="w-full flex flex-col items-center gap-8 bg-linear-to-b from-teal-400 dark:from-teal-800 from-50% px-8 pt-32 pb-48 md:px-32 md:py-48">
     <h1 class="text-4xl md:text-6xl font-semibold text-center text-shadow-sm">Backing builders of what's next.</h1>
     <p class="text-lg md:text-2xl text-center">We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies.</p>
     <Button class="h-12 text-lg md:text-xl hover:cursor-pointer" size="lg" onclick={() => smoothScroll("learn-more")}>
@@ -18,8 +18,8 @@
 
 <div class="max-w-320 flex flex-col gap-16 px-6 md:px-16">
 
-    <div class="flex flex-col gap-16 pt-16" id="learn-more">
-        <div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32">
+    <div class="flex flex-col gap-16" id="learn-more">
+        <div class="flex flex-col-reverse md:flex-row md:items-center gap-16 lg:gap-32">
             <div class="md:basis-1/2 flex flex-col gap-8">
                 <h3 class="text-4xl font-semibold">Investing across frontiers</h3>
                 <p class="text-lg">From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning ambitious ideas into category-defining businesses.</p>
@@ -48,7 +48,7 @@
             </svg>
         </div>
 
-        <div class="flex flex-col md:flex-row-reverse md:items-center gap-16 lg:gap-32">
+        <div class="flex flex-col-reverse md:flex-row-reverse md:items-center gap-16 lg:gap-32">
             <Card.Root class="md:basis-1/2">
                 <Card.Header>
                     <Card.Title class="text-2xl">Investment focus</Card.Title>
@@ -101,7 +101,7 @@
             </svg>
         </div>
 
-        <div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32 md:py-24">
+        <div class="flex flex-col-reverse md:flex-row md:items-center gap-16 lg:gap-32 md:py-24">
             <div class="md:basis-1/2 flex flex-col gap-8">
                 <h3 class="text-4xl font-semibold">Speed without interference</h3>
                 <p class="text-lg">We back founders early and help them move faster. Whether it's building the first team, landing early customers, or shaping product strategy, we're here to support the journey—without getting in the way.</p>
