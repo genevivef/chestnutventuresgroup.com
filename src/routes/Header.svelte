@@ -1,7 +1,6 @@
 <script lang="ts">
     import * as NavigationMenu from "$lib/components/ui/navigation-menu";
     import { navigationMenuTriggerStyle } from "$lib/components/ui/navigation-menu/navigation-menu-trigger.svelte";
-    import { smoothScroll } from "$lib/utils";
 </script>
 
 <header class="w-full flex flex-row items-center justify-between p-4 md:p-6">
