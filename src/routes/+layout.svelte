@@ -15,7 +15,9 @@
 <div class="min-h-screen flex flex-col items-center">
 	<Header />
 
-	{@render children()}
+	<main class="grow w-full h-full flex flex-col items-center">
+		{@render children()}
+	</main>
 
 	<Footer />
 </div>
