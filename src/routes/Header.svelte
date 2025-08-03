@@ -33,7 +33,7 @@
 
     <div class="md:hidden">
         <Sheet.Root>
-            <Sheet.Trigger class={buttonVariants({ variant: "ghost", size: "icon" })}>
+            <Sheet.Trigger class={buttonVariants({ variant: "ghost", size: "icon" })} aria-label="Menu">
                 <MenuIcon />
             </Sheet.Trigger>
             <Sheet.Content side="right">

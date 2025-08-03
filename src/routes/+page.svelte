@@ -26,7 +26,7 @@
     <div class="flex flex-col gap-16" id="learn-more">
         <div class="flex flex-col-reverse md:flex-row md:items-center gap-16 lg:gap-32">
             <div class="md:basis-1/2 flex flex-col gap-8">
-                <h3 class="text-4xl font-semibold">Investing across frontiers</h3>
+                <h2 class="text-4xl font-semibold">Investing across frontiers</h2>
                 <p class="text-lg">From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning ambitious ideas into category-defining businesses.</p>
             </div>
 
@@ -108,7 +108,7 @@
 
         <div class="flex flex-col-reverse md:flex-row md:items-center gap-16 lg:gap-32 md:py-24">
             <div class="md:basis-1/2 flex flex-col gap-8">
-                <h3 class="text-4xl font-semibold">Speed without interference</h3>
+                <h2 class="text-4xl font-semibold">Speed without interference</h2>
                 <p class="text-lg">We back founders early and help them move faster. Whether it's building the first team, landing early customers, or shaping product strategy, we're here to support the journey—without getting in the way.</p>
             </div>
 
@@ -156,37 +156,37 @@
         <Carousel.Content>
             <Carousel.Item class="basis-full md:basis-1/3">
                 <a class="group flex flex-col gap-4" href="https://www.deepen.ai/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/deepen.png" alt="Deepen.AI" />
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/deepen.png" alt="Deepen AI Logo" />
                     <p class="group-hover:underline text-lg font-semibold">Deepen AI</p>
                 </a>
             </Carousel.Item>
             <Carousel.Item class="basis-full md:basis-1/3">
                 <a class="group flex flex-col gap-4" href="https://transastra.com/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/transastra.png" alt="TransAstra" />
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/transastra.png" alt="TransAstra Logo" />
                     <p class="group-hover:underline text-lg font-semibold">TransAstra</p>
                 </a>
             </Carousel.Item>
             <Carousel.Item class="basis-full md:basis-1/3">
                 <a class="group flex flex-col gap-4" href="https://pathcisionmedicine.com/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine" />
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine Logo" />
                     <p class="group-hover:underline text-lg font-semibold">PathCision Medicine</p>
                 </a>
             </Carousel.Item>
             <Carousel.Item class="basis-full md:basis-1/3">
                 <a class="group flex flex-col gap-4" href="https://www.leanplum.com/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/leanplum.png" alt="Leanplum" />
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/leanplum.png" alt="Leanplum Logo" />
                     <p class="group-hover:underline text-lg font-semibold">Leanplum</p>
                 </a>
             </Carousel.Item>
             <Carousel.Item class="basis-full md:basis-1/3">
                 <a class="group flex flex-col gap-4" href="https://www.saga.xyz/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga" />
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga Logo" />
                     <p class="group-hover:underline text-lg font-semibold">Saga</p>
                 </a>
             </Carousel.Item>
             <Carousel.Item class="basis-full md:basis-1/3">
                 <a class="group flex flex-col gap-4" href="https://www.getdor.com/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor" />
+                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor Logo" />
                     <p class="group-hover:underline text-lg font-semibold">Dor</p>
                 </a>
             </Carousel.Item>
@@ -219,7 +219,7 @@
                     <enhanced:img class="w-full aspect-square rounded-lg mb-6" src="$lib/assets/team/ricky-fiel.jpeg" alt="Ricky Fiel" />
                     <div class="flex flex-row items-center justify-between gap-4">
                         <Card.Title class="text-xl">Ricky Fiel</Card.Title>
-                        <Button class="p-2" size="icon" variant="outline" href="https://www.linkedin.com/in/rickyfiel" target="_blank" rel="noopener noreferrer">
+                        <Button class="p-2" size="icon" variant="outline" href="https://www.linkedin.com/in/rickyfiel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                             <LinkedinIcon />
                         </Button>
                     </div>
@@ -235,7 +235,7 @@
                     <enhanced:img class="w-full aspect-square rounded-lg mb-6" src="$lib/assets/team/genevive-fiel.jpeg" alt="Genevive Fiel" />
                     <div class="flex flex-row items-center justify-between gap-4">
                         <Card.Title class="text-xl">Genevive Fiel</Card.Title>
-                        <Button class="p-2" size="icon" variant="outline" href="https://www.linkedin.com/in/genevive-fiel-4822866a" target="_blank" rel="noopener noreferrer">
+                        <Button class="p-2" size="icon" variant="outline" href="https://www.linkedin.com/in/genevive-fiel-4822866a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                             <LinkedinIcon />
                         </Button>
                     </div>
