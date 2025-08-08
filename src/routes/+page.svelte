@@ -30,9 +30,9 @@
                 <p class="text-xl leading-relaxed">From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning ambitious ideas into category-defining businesses.</p>
             </div>
 
-            <div class="relative">
+            <div class="md:basis-1/2 relative">
                 <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
-                <svg class="relative md:basis-1/2 w-full" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <svg class="relative w-full" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                     <style>
                         .circle-animation {
                             transform-origin: center;
@@ -62,9 +62,9 @@
                 <p class="text-xl leading-relaxed">We focus on investments at any stage where we can make the biggest impact, leading rounds and providing hands-on support.</p>
             </div>
 
-            <div class="relative">
+            <div class="md:basis-1/2 relative">
                 <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
-                <svg class="relative md:basis-1/2 w-full" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <svg class="relative w-full" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                     <style>
                         .stage-animation {
                             transform-origin: center;
@@ -93,9 +93,9 @@
                 <p class="text-xl leading-relaxed">We back founders early and help them move faster. Whether it's building the first team, landing early customers, or shaping product strategy, we're here to support the journey—without getting in the way.</p>
             </div>
 
-            <div class="relative">
+            <div class="md:basis-1/2 relative">
                 <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
-                <svg class="relative md:basis-1/2 w-full" width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+                <svg class="relative w-full" width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
                     <line class="stroke-teal-500/80" x1="100" y1="75" x2="500" y2="75" stroke-width="4" stroke-linecap="round"/>
                     <circle class="fill-teal-500/40" cx="100" cy="75" r="25"/>
                     <circle class="fill-teal-500/40" cx="300" cy="75" r="25"/>
