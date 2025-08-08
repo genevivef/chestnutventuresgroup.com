@@ -21,13 +21,13 @@
     </Button>
 </div>
 
-<div class="max-w-336 flex flex-col gap-16 px-6 md:px-16">
+<div class="max-w-336 flex flex-col gap-32 px-6 md:px-16">
 
     <div class="flex flex-col gap-16 md:gap-32" id="learn-more">
         <div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32">
             <div class="md:basis-1/2 flex flex-col gap-8">
                 <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Investing across frontiers</h2>
-                <p class="text-xl leading-relaxed">From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning ambitious ideas into category-defining businesses.</p>
+                <p class="text-xl text-muted-foreground leading-relaxed">From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning ambitious ideas into category-defining businesses.</p>
             </div>
 
             <div class="md:basis-1/2 relative">
@@ -59,7 +59,7 @@
         <div class="flex flex-col md:flex-row-reverse md:items-center gap-16 lg:gap-32">
             <div class="md:basis-1/2 flex flex-col gap-8">
                 <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Strategic partnerships at every stage</h2>
-                <p class="text-xl leading-relaxed">We focus on investments at any stage where we can make the biggest impact, leading rounds and providing hands-on support.</p>
+                <p class="text-xl text-muted-foreground leading-relaxed">We focus on investments at any stage where we can make the biggest impact, leading rounds and providing hands-on support.</p>
             </div>
 
             <div class="md:basis-1/2 relative">
@@ -90,7 +90,7 @@
         <div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32 md:py-24">
             <div class="md:basis-1/2 flex flex-col gap-8">
                 <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Speed without interference</h2>
-                <p class="text-xl leading-relaxed">We back founders early and help them move faster. Whether it's building the first team, landing early customers, or shaping product strategy, we're here to support the journey—without getting in the way.</p>
+                <p class="text-xl text-muted-foreground leading-relaxed">We back founders early and help them move faster. Whether it's building the first team, landing early customers, or shaping product strategy, we're here to support the journey—without getting in the way.</p>
             </div>
 
             <div class="md:basis-1/2 relative">
@@ -119,59 +119,68 @@
 
     <Separator />
 
-    <Carousel.Root class="max-md:max-w-80">
-        <div class="flex justify-between pb-8">
-            <h2 class="text-2xl font-semibold">Portfolio</h2>
-            <div class="flex gap-4">
-                <Carousel.Previous />
-                <Carousel.Next />
-            </div>
+    <div class="flex flex-col items-center gap-12">
+        <div class="max-w-192 flex flex-col gap-4">
+            <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-center">Companies we've backed</h2>
+            <p class="text-xl leading-relaxed text-center text-muted-foreground">We're proud to partner with exceptional founders building the future across various industries and stages.</p>
         </div>
 
-        <Carousel.Content>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <a class="group flex flex-col gap-4" href="https://www.deepen.ai/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/deepen.png" alt="Deepen AI Logo" />
-                    <p class="group-hover:underline text-lg font-semibold">Deepen AI</p>
-                </a>
-            </Carousel.Item>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <a class="group flex flex-col gap-4" href="https://transastra.com/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/transastra.png" alt="TransAstra Logo" />
-                    <p class="group-hover:underline text-lg font-semibold">TransAstra</p>
-                </a>
-            </Carousel.Item>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <a class="group flex flex-col gap-4" href="https://pathcisionmedicine.com/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine Logo" />
-                    <p class="group-hover:underline text-lg font-semibold">PathCision Medicine</p>
-                </a>
-            </Carousel.Item>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <a class="group flex flex-col gap-4" href="https://www.leanplum.com/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/leanplum.png" alt="Leanplum Logo" />
-                    <p class="group-hover:underline text-lg font-semibold">Leanplum</p>
-                </a>
-            </Carousel.Item>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <a class="group flex flex-col gap-4" href="https://www.saga.xyz/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga Logo" />
-                    <p class="group-hover:underline text-lg font-semibold">Saga</p>
-                </a>
-            </Carousel.Item>
-            <Carousel.Item class="basis-full md:basis-1/3">
-                <a class="group flex flex-col gap-4" href="https://www.getdor.com/" target="_blank" rel="noopener noreferrer">
-                    <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor Logo" />
-                    <p class="group-hover:underline text-lg font-semibold">Dor</p>
-                </a>
-            </Carousel.Item>
-        </Carousel.Content>
-    </Carousel.Root>
+        <Carousel.Root class="max-md:max-w-80">
+            <div class="flex justify-between items-center gap-4 pb-8">
+                <p class="text-lg font-semibold text-muted-foreground">Portfolio</p>
+                <div class="flex gap-4">
+                    <Carousel.Previous />
+                    <Carousel.Next />
+                </div>
+            </div>
+            <Carousel.Content>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <a class="group flex flex-col gap-4" href="https://www.deepen.ai/" target="_blank" rel="noopener noreferrer">
+                        <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/deepen.png" alt="Deepen AI Logo" />
+                        <p class="group-hover:underline text-lg font-semibold">Deepen AI</p>
+                    </a>
+                </Carousel.Item>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <a class="group flex flex-col gap-4" href="https://transastra.com/" target="_blank" rel="noopener noreferrer">
+                        <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/transastra.png" alt="TransAstra Logo" />
+                        <p class="group-hover:underline text-lg font-semibold">TransAstra</p>
+                    </a>
+                </Carousel.Item>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <a class="group flex flex-col gap-4" href="https://pathcisionmedicine.com/" target="_blank" rel="noopener noreferrer">
+                        <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine Logo" />
+                        <p class="group-hover:underline text-lg font-semibold">PathCision Medicine</p>
+                    </a>
+                </Carousel.Item>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <a class="group flex flex-col gap-4" href="https://www.leanplum.com/" target="_blank" rel="noopener noreferrer">
+                        <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/leanplum.png" alt="Leanplum Logo" />
+                        <p class="group-hover:underline text-lg font-semibold">Leanplum</p>
+                    </a>
+                </Carousel.Item>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <a class="group flex flex-col gap-4" href="https://www.saga.xyz/" target="_blank" rel="noopener noreferrer">
+                        <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga Logo" />
+                        <p class="group-hover:underline text-lg font-semibold">Saga</p>
+                    </a>
+                </Carousel.Item>
+                <Carousel.Item class="basis-full md:basis-1/3">
+                    <a class="group flex flex-col gap-4" href="https://www.getdor.com/" target="_blank" rel="noopener noreferrer">
+                        <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor Logo" />
+                        <p class="group-hover:underline text-lg font-semibold">Dor</p>
+                    </a>
+                </Carousel.Item>
+            </Carousel.Content>
+        </Carousel.Root>
+    </div>
 
     <Separator />
 
-    <div class="flex flex-col gap-8">
-        <h2 class="text-2xl font-semibold">Our team</h2>
+    <div class="flex flex-col items-center gap-12">
+        <div class="max-w-192 flex flex-col gap-4">
+            <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-center">Meet the team</h2>
+            <p class="text-xl leading-relaxed text-center text-muted-foreground">Experienced investors and operators committed to helping founders build exceptional companies.</p>
+        </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card.Root>
