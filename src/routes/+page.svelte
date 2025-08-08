@@ -3,6 +3,7 @@
     import { Separator } from "$lib/components/ui/separator";
     import * as Carousel from "$lib/components/ui/carousel";
     import TeamMember from "$lib/components/home/TeamMember.svelte";
+    import ArrowDownIcon from "@lucide/svelte/icons/arrow-down";
     import { smoothScroll } from "$lib/utils";
 </script>
 
@@ -11,17 +12,26 @@
     <meta name="description" content="Backing builders of what's next. We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies." />
 </svelte:head>
 
-<div class="w-full flex flex-col items-center gap-8 bg-linear-to-b from-teal-400 dark:from-teal-800 from-50% px-8 pt-32 pb-48 md:px-32 md:py-48">
-    <h1 class="text-4xl md:text-6xl font-semibold text-center text-shadow-sm">Backing builders of what's next.</h1>
-    <p class="text-lg md:text-2xl text-center">We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies.</p>
-    <Button class="h-12 text-lg hover:cursor-pointer" size="lg" onclick={() => smoothScroll("learn-more")}>
-        Learn more
-    </Button>
-</div>
-
 <div class="max-w-336 flex flex-col items-center gap-32 px-6 md:px-16">
 
-    <div class="flex flex-col gap-16 md:gap-32" id="learn-more">
+    <div class="relative size-full flex justify-center py-32">
+        <div class="absolute inset-0 bg-gradient-to-br from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-full"></div>
+        <div class="relative max-w-4xl flex flex-col items-center gap-8">
+            <h1 class="text-4xl sm:text-6xl md:text-7xl text-center font-bold leading-tight bg-gradient-to-r from-gray-900 via-teal-800 to-gray-900 dark:from-white dark:via-teal-100 dark:to-white bg-clip-text text-transparent">Backing builders of what's next.</h1>
+            <p class="text-xl md:text-3xl text-center text-muted-foreground leading-relaxed">We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies.</p>
+            <div class="flex flex-col md:flex-row gap-8">
+                <Button class="h-12 md:h-14 text-lg md:text-xl hover:cursor-pointer md:gap-4 md:px-6!" size="lg" onclick={() => smoothScroll("learn-more")}>
+                    Learn more
+                    <ArrowDownIcon class="size-4 md:size-6" />
+                </Button>
+                <Button class="h-12 md:h-14 text-lg md:text-xl hover:cursor-pointer md:px-6!" size="lg" variant="outline" href="/contact">
+                    Get in touch
+                </Button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-16 md:gap-32 pt-8 md:pt-16" id="learn-more">
         <div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32">
             <div class="md:basis-1/2 flex flex-col gap-8">
                 <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Investing across frontiers</h2>
@@ -29,7 +39,7 @@
             </div>
 
             <div class="md:basis-1/2 relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
                 <svg class="relative w-full" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                     <style>
                         .circle-animation {
@@ -61,7 +71,7 @@
             </div>
 
             <div class="md:basis-1/2 relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
                 <svg class="relative w-full" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                     <style>
                         .stage-animation {
@@ -92,13 +102,13 @@
             </div>
 
             <div class="md:basis-1/2 relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
                 <svg class="relative w-full" width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
-                    <line class="stroke-teal-500/80" x1="100" y1="75" x2="500" y2="75" stroke-width="4" stroke-linecap="round"/>
-                    <circle class="fill-teal-500/40" cx="100" cy="75" r="25"/>
-                    <circle class="fill-teal-500/40" cx="300" cy="75" r="25"/>
-                    <circle class="fill-teal-500/40" cx="500" cy="75" r="25"/>
-                    <circle class="fill-teal-500/80" cy="75" r="12">
+                    <line class="stroke-blue-500/80" x1="100" y1="75" x2="500" y2="75" stroke-width="4" stroke-linecap="round"/>
+                    <circle class="fill-blue-500/40" cx="100" cy="75" r="25"/>
+                    <circle class="fill-blue-500/40" cx="300" cy="75" r="25"/>
+                    <circle class="fill-blue-500/40" cx="500" cy="75" r="25"/>
+                    <circle class="fill-blue-500/80" cy="75" r="12">
                         <animate attributeName="cx"
                             values="100;100;500;500"
                             keyTimes="0;0.5;0.9;1"
@@ -217,7 +227,7 @@
     <Separator />
 
     <div class="relative">
-        <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
         <div class="relative max-w-192 flex flex-col items-center gap-4">
             <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-center">Ready to build the future?</h2>
             <p class="text-xl leading-relaxed text-center text-muted-foreground">We're always looking for exceptional founders with bold ideas. Contact us to start working together and build something extraordinary.</p>
