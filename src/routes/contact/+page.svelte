@@ -27,7 +27,7 @@
     <h1 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-4xl md:text-6xl text-white text-shadow-sm font-semibold">Contact us</h1>
 </div>
 
-<div class="max-w-320 w-full flex flex-col gap-16 px-6 md:px-16">
+<div class="max-w-336 w-full flex flex-col gap-16 px-6 md:px-16">
     <div class="flex flex-col md:flex-row gap-32 py-32">
         <div class="basis-1/2 flex flex-col gap-8">
             <h2 class="text-4xl font-semibold">Who we are</h2>

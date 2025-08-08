@@ -8,7 +8,7 @@
     const currentYear = new Date().getFullYear();
 </script>
 
-<footer class="max-w-320 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-16 p-8">
+<footer class="max-w-336 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-16 p-8">
     <div class="flex flex-row items-center gap-2 text-sm">
         <enhanced:img src="$lib/assets/cvg-logo.png" alt="Chestnut Ventures Group Logo" class="max-h-8 w-auto rounded-lg" />
         &copy; {currentYear} Chestnut Ventures Group

@@ -21,124 +21,99 @@
     </Button>
 </div>
 
-<div class="max-w-320 flex flex-col gap-16 px-6 md:px-16">
+<div class="max-w-336 flex flex-col gap-16 px-6 md:px-16">
 
-    <div class="flex flex-col gap-16" id="learn-more">
-        <div class="flex flex-col-reverse md:flex-row md:items-center gap-16 lg:gap-32">
+    <div class="flex flex-col gap-16 md:gap-32" id="learn-more">
+        <div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32">
             <div class="md:basis-1/2 flex flex-col gap-8">
-                <h2 class="text-4xl font-semibold">Investing across frontiers</h2>
-                <p class="text-lg">From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning ambitious ideas into category-defining businesses.</p>
+                <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Investing across frontiers</h2>
+                <p class="text-xl leading-relaxed">From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning ambitious ideas into category-defining businesses.</p>
             </div>
 
-            <svg class="md:basis-1/2 w-full" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    .circle-animation {
-                        transform-origin: center;
-                        opacity: 0;
-                        animation: riseFade 4s ease-in-out infinite;
-                    }
-                    @keyframes riseFade {
-                        0% { opacity: 0; transform: translateY(20px) scale(0.95); }
-                        20% { opacity: 1; transform: translateY(0px) scale(1.05); }
-                        40% { transform: translateY(-5px) scale(1); }
-                        60% { opacity: 1; }
-                        80% { opacity: 0.5; transform: translateY(10px) scale(0.97); }
-                        100% { opacity: 0; transform: translateY(20px) scale(0.95); }
-                    }
-                </style>
-                <circle class="circle-animation fill-violet-300" cx="040" cy="320" r="10" style="animation-delay: 0.0s;" />
-                <circle class="circle-animation fill-violet-300" cx="110" cy="290" r="20" style="animation-delay: 0.5s;" />
-                <circle class="circle-animation fill-violet-300" cx="200" cy="220" r="35" style="animation-delay: 1.0s;" />
-                <circle class="circle-animation fill-violet-300" cx="310" cy="110" r="55" style="animation-delay: 1.5s;" />
-            </svg>
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
+                <svg class="relative md:basis-1/2 w-full" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <style>
+                        .circle-animation {
+                            transform-origin: center;
+                            opacity: 0;
+                            animation: riseFade 4s ease-in-out infinite;
+                        }
+                        @keyframes riseFade {
+                            0% { opacity: 0; transform: translateY(20px) scale(0.95); }
+                            20% { opacity: 1; transform: translateY(0px) scale(1.05); }
+                            40% { transform: translateY(-5px) scale(1); }
+                            60% { opacity: 1; }
+                            80% { opacity: 0.5; transform: translateY(10px) scale(0.97); }
+                            100% { opacity: 0; transform: translateY(20px) scale(0.95); }
+                        }
+                    </style>
+                    <circle class="circle-animation fill-violet-300" cx="040" cy="320" r="10" style="animation-delay: 0.0s;" />
+                    <circle class="circle-animation fill-violet-300" cx="110" cy="290" r="20" style="animation-delay: 0.5s;" />
+                    <circle class="circle-animation fill-violet-300" cx="200" cy="220" r="35" style="animation-delay: 1.0s;" />
+                    <circle class="circle-animation fill-violet-300" cx="310" cy="110" r="55" style="animation-delay: 1.5s;" />
+                </svg>
+            </div>
         </div>
 
-        <div class="flex flex-col-reverse md:flex-row-reverse md:items-center gap-16 lg:gap-32">
-            <Card.Root class="md:basis-1/2">
-                <Card.Header>
-                    <Card.Title class="text-2xl">Investment focus</Card.Title>
-                </Card.Header>
-                <Card.Content>
-                    <div class="grid grid-cols-2 xl:flex gap-4">
-                        <Badge class="text-lg">Pre-seed</Badge>
-                        <Badge class="text-lg">Seed</Badge>
-                        <Badge class="text-lg">Series A</Badge>
-                    </div>
-                </Card.Content>
-            </Card.Root>
-
-            <svg class="md:basis-1/2 w-full" width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    .ring-animation {
-                        transform-origin: center;
-                        opacity: 0;
-                        animation: pulse 6s ease-in-out infinite;
-                    }
-                    @keyframes pulse {
-                        0%, 100% { transform: scale(0.98); opacity: 0.4; }
-                        50% { transform: scale(1.05); opacity: 1; }
-                    }
-                </style>
-                <circle class="ring-animation stroke-red-300" style="animation-delay: 0.9s;" cx="150" cy="150" r="100" fill="none" stroke-width="8"/>
-                <circle class="ring-animation stroke-red-300" style="animation-delay: 0.6s;" cx="150" cy="150" r="70" fill="none" stroke-width="6"/>
-                <circle class="ring-animation stroke-red-300" style="animation-delay: 0.3s;" cx="150" cy="150" r="40" fill="none" stroke-width="4"/>
-                <circle class="ring-animation fill-red-300" style="animation-delay: 0s;" cx="150" cy="150" r="15" />
-                <circle class="fill-red-300" r="15">
-                    <animate attributeName="cx" values="150;150;150" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                    <animate attributeName="cy" values="15;150;150" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                </circle>
-                <circle class="fill-red-300" r="15">
-                    <animate attributeName="cx" values="150;150;150" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                    <animate attributeName="cy" values="285;150;150" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                </circle>
-                <circle class="fill-red-300" r="15">
-                    <animate attributeName="cx" values="15;150;150" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                    <animate attributeName="cy" values="150;150;150" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                </circle>
-                <circle class="fill-red-300" r="15">
-                    <animate attributeName="cx" values="285;150;150" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                    <animate attributeName="cy" values="150;150;150" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
-                </circle>
-            </svg>
-        </div>
-
-        <div class="flex flex-col-reverse md:flex-row md:items-center gap-16 lg:gap-32 md:py-24">
+        <div class="flex flex-col md:flex-row-reverse md:items-center gap-16 lg:gap-32">
             <div class="md:basis-1/2 flex flex-col gap-8">
-                <h2 class="text-4xl font-semibold">Speed without interference</h2>
-                <p class="text-lg">We back founders early and help them move faster. Whether it's building the first team, landing early customers, or shaping product strategy, we're here to support the journey—without getting in the way.</p>
+                <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Strategic partnerships at every stage</h2>
+                <p class="text-xl leading-relaxed">We focus on investments at any stage where we can make the biggest impact, leading rounds and providing hands-on support.</p>
             </div>
 
-            <svg class="md:basis-1/2 w-full" width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
-                <style>
-                    .stage {
-                        fill: var(--color-amber-500);
-                        opacity: 0.4;
-                        transition: opacity 0.3s ease;
-                    }
-                    .progress {
-                        fill: var(--color-amber-500);
-                    }
-                    @keyframes moveDot {
-                        0%   { cx: 100; opacity: 0; }
-                        10%  { cx: 100; opacity: 1; }
-                        50%  { cx: 300; opacity: 1; }
-                        90%  { cx: 500; opacity: 1; }
-                        100% { cx: 500; opacity: 0; }
-                    }
-                </style>
-                <line class="stroke-amber-500" x1="100" y1="75" x2="500" y2="75" stroke-width="4" stroke-linecap="round"/>
-                <circle class="stage" cx="100" cy="75" r="25"/>
-                <circle class="stage" cx="300" cy="75" r="25"/>
-                <circle class="stage" cx="500" cy="75" r="25"/>
-                <circle class="progress" cy="75" r="12">
-                    <animate attributeName="cx" values="100;100;300;500;500" keyTimes="0;0.1;0.5;0.9;1" dur="2s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.1;0.5;0.9;1" dur="2s" repeatCount="indefinite"/>
-                </circle>
-            </svg>
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
+                <svg class="relative md:basis-1/2 w-full" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <style>
+                        .stage-animation {
+                            transform-origin: center;
+                            opacity: 0.3;
+                            animation: stageGrow 5s ease-in-out infinite;
+                        }
+                        @keyframes stageGrow {
+                            0%, 100% { transform: scale(1); opacity: 0.3; }
+                            33% { transform: scale(1.1); opacity: 0.8; }
+                            66% { transform: scale(1.05); opacity: 0.6; }
+                        }
+                    </style>
+                    <circle class="stage-animation fill-blue-400" cx="200" cy="100" r="45" style="animation-delay: 0s;" />
+                    <circle class="stage-animation fill-teal-400" cx="120" cy="200" r="50" style="animation-delay: 1.5s;" />
+                    <circle class="stage-animation fill-violet-400" cx="280" cy="220" r="40" style="animation-delay: 3s;" />
+                    <text x="120" y="205" text-anchor="middle" class="fill-white text-sm font-semibold">Pre-seed</text>
+                    <text x="200" y="105" text-anchor="middle" class="fill-white text-sm font-semibold">Seed</text>
+                    <text x="280" y="225" text-anchor="middle" class="fill-white text-sm font-semibold">Series A</text>
+                </svg>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32 md:py-24">
+            <div class="md:basis-1/2 flex flex-col gap-8">
+                <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Speed without interference</h2>
+                <p class="text-xl leading-relaxed">We back founders early and help them move faster. Whether it's building the first team, landing early customers, or shaping product strategy, we're here to support the journey—without getting in the way.</p>
+            </div>
+
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
+                <svg class="relative md:basis-1/2 w-full" width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+                    <line class="stroke-teal-500/80" x1="100" y1="75" x2="500" y2="75" stroke-width="4" stroke-linecap="round"/>
+                    <circle class="fill-teal-500/40" cx="100" cy="75" r="25"/>
+                    <circle class="fill-teal-500/40" cx="300" cy="75" r="25"/>
+                    <circle class="fill-teal-500/40" cx="500" cy="75" r="25"/>
+                    <circle class="fill-teal-500/80" cy="75" r="12">
+                        <animate attributeName="cx"
+                            values="100;100;500;500"
+                            keyTimes="0;0.5;0.9;1"
+                            dur="5s"
+                            repeatCount="indefinite"/>
+                        <animate attributeName="opacity"
+                            values="0;0;1;1;0"
+                            keyTimes="0;0.4;0.5;0.9;1"
+                            dur="5s"
+                            repeatCount="indefinite"/>
+                    </circle>
+                </svg>
+            </div>
         </div>
     </div>
 
