@@ -117,9 +117,9 @@
                     <circle class="fill-blue-500/40 stage s1" cx="100" cy="75" r="25"/>
                     <circle class="fill-blue-500/40 stage s2" cx="300" cy="75" r="25"/>
                     <circle class="fill-blue-500/40 stage s3" cx="500" cy="75" r="25"/>
-                    <text class="stage-label" style="text-anchor:middle;" x="100" y="115">Ideation</text>
-                    <text class="stage-label" style="text-anchor:middle;" x="300" y="115">Growth</text>
-                    <text class="stage-label" style="text-anchor:middle;" x="500" y="115">Scale</text>
+                    <text class="stage-label dark:fill-white" style="text-anchor:middle;" x="100" y="115">Ideation</text>
+                    <text class="stage-label dark:fill-white" style="text-anchor:middle;" x="300" y="115">Growth</text>
+                    <text class="stage-label dark:fill-white" style="text-anchor:middle;" x="500" y="115">Scale</text>
                     <circle class="fill-blue-500/80" cy="75" r="12">
                         <animate attributeName="cx"
                             values="100;100;500;500"
