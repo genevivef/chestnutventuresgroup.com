@@ -103,11 +103,23 @@
 
             <div class="md:basis-1/2 relative">
                 <div class="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
-                <svg class="relative w-full" width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+                <svg class="relative w-full" width="600" height="180" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+                    <style>
+                        .stage { transform-box: fill-box; transform-origin: center; }
+                        .s1 { animation: pulse1 5s cubic-bezier(0.42, 0, 0.58, 1) infinite; }
+                        .s2 { animation: pulse2 5s cubic-bezier(0.42, 0, 0.58, 1) infinite; }
+                        .s3 { animation: pulse3 5s cubic-bezier(0.42, 0, 0.58, 1) infinite; }
+                        @keyframes pulse1 { 0%, 46%, 100% { transform: scale(1); } 50% { transform: scale(1.18); } 54% { transform: scale(1); } }
+                        @keyframes pulse2 { 0%, 66%, 100% { transform: scale(1); } 70% { transform: scale(1.18); } 74% { transform: scale(1); } }
+                        @keyframes pulse3 { 0%, 86%, 100% { transform: scale(1); } 90% { transform: scale(1.18); } 94% { transform: scale(1); } }
+                    </style>
                     <line class="stroke-blue-500/80" x1="100" y1="75" x2="500" y2="75" stroke-width="4" stroke-linecap="round"/>
-                    <circle class="fill-blue-500/40" cx="100" cy="75" r="25"/>
-                    <circle class="fill-blue-500/40" cx="300" cy="75" r="25"/>
-                    <circle class="fill-blue-500/40" cx="500" cy="75" r="25"/>
+                    <circle class="fill-blue-500/40 stage s1" cx="100" cy="75" r="25"/>
+                    <circle class="fill-blue-500/40 stage s2" cx="300" cy="75" r="25"/>
+                    <circle class="fill-blue-500/40 stage s3" cx="500" cy="75" r="25"/>
+                    <text class="stage-label" style="text-anchor:middle;" x="100" y="115">Ideation</text>
+                    <text class="stage-label" style="text-anchor:middle;" x="300" y="115">Growth</text>
+                    <text class="stage-label" style="text-anchor:middle;" x="500" y="115">Scale</text>
                     <circle class="fill-blue-500/80" cy="75" r="12">
                         <animate attributeName="cx"
                             values="100;100;500;500"
