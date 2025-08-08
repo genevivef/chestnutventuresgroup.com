@@ -14,12 +14,12 @@
 <div class="w-full flex flex-col items-center gap-8 bg-linear-to-b from-teal-400 dark:from-teal-800 from-50% px-8 pt-32 pb-48 md:px-32 md:py-48">
     <h1 class="text-4xl md:text-6xl font-semibold text-center text-shadow-sm">Backing builders of what's next.</h1>
     <p class="text-lg md:text-2xl text-center">We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies.</p>
-    <Button class="h-12 text-lg md:text-xl hover:cursor-pointer" size="lg" onclick={() => smoothScroll("learn-more")}>
+    <Button class="h-12 text-lg hover:cursor-pointer" size="lg" onclick={() => smoothScroll("learn-more")}>
         Learn more
     </Button>
 </div>
 
-<div class="max-w-336 flex flex-col gap-32 px-6 md:px-16">
+<div class="max-w-336 flex flex-col items-center gap-32 px-6 md:px-16">
 
     <div class="flex flex-col gap-16 md:gap-32" id="learn-more">
         <div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32">
@@ -211,6 +211,17 @@
                     <enhanced:img class="w-full aspect-square rounded-lg" src="$lib/assets/team/genevive-fiel.jpeg" alt="Genevive Fiel" />
                 {/snippet}
             </TeamMember>
+        </div>
+    </div>
+
+    <Separator />
+
+    <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"></div>
+        <div class="relative max-w-192 flex flex-col items-center gap-4">
+            <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-center">Ready to build the future?</h2>
+            <p class="text-xl leading-relaxed text-center text-muted-foreground">We're always looking for exceptional founders with bold ideas. Contact us to start working together and build something extraordinary.</p>
+            <Button class="h-12 text-lg" size="lg" href="/contact">Get in touch</Button>
         </div>
     </div>
 
