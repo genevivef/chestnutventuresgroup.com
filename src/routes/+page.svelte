@@ -152,37 +152,37 @@
                 <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
                     <a class="group flex flex-col gap-4" href="https://www.deepen.ai/" target="_blank" rel="noopener noreferrer">
                         <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/deepen.png" alt="Deepen AI Logo" />
-                        <p class="group-hover:underline text-lg font-semibold">Deepen AI</p>
+                        <p class="group-hover:underline text-2xl font-semibold">Deepen AI</p>
                     </a>
                 </Carousel.Item>
                 <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
                     <a class="group flex flex-col gap-4" href="https://transastra.com/" target="_blank" rel="noopener noreferrer">
                         <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/transastra.png" alt="TransAstra Logo" />
-                        <p class="group-hover:underline text-lg font-semibold">TransAstra</p>
+                        <p class="group-hover:underline text-2xl font-semibold">TransAstra</p>
                     </a>
                 </Carousel.Item>
                 <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
                     <a class="group flex flex-col gap-4" href="https://pathcisionmedicine.com/" target="_blank" rel="noopener noreferrer">
                         <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/pathcision.png" alt="PathCision Medicine Logo" />
-                        <p class="group-hover:underline text-lg font-semibold">PathCision Medicine</p>
+                        <p class="group-hover:underline text-2xl font-semibold">PathCision Medicine</p>
                     </a>
                 </Carousel.Item>
                 <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
                     <a class="group flex flex-col gap-4" href="https://www.leanplum.com/" target="_blank" rel="noopener noreferrer">
                         <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/leanplum.png" alt="Leanplum Logo" />
-                        <p class="group-hover:underline text-lg font-semibold">Leanplum</p>
+                        <p class="group-hover:underline text-2xl font-semibold">Leanplum</p>
                     </a>
                 </Carousel.Item>
                 <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
                     <a class="group flex flex-col gap-4" href="https://www.saga.xyz/" target="_blank" rel="noopener noreferrer">
                         <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga Logo" />
-                        <p class="group-hover:underline text-lg font-semibold">Saga</p>
+                        <p class="group-hover:underline text-2xl font-semibold">Saga</p>
                     </a>
                 </Carousel.Item>
                 <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
                     <a class="group flex flex-col gap-4" href="https://www.getdor.com/" target="_blank" rel="noopener noreferrer">
                         <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor Logo" />
-                        <p class="group-hover:underline text-lg font-semibold">Dor</p>
+                        <p class="group-hover:underline text-2xl font-semibold">Dor</p>
                     </a>
                 </Carousel.Item>
             </Carousel.Content>
