@@ -35,7 +35,9 @@
 
 <Card.Root>
     <Card.Header class="flex flex-col items-center gap-6">
-        {@render image()}
+        <div class="size-full">
+            {@render image()}
+        </div>
         <div class="flex flex-row items-center gap-6">
             <Card.Title class="text-2xl font-bold">{name}</Card.Title>
             {#if linkedinUrl}
