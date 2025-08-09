@@ -205,7 +205,7 @@
                 On the operating side, Tiffany has built and scaled finance, fundraising, and international operations at SaaS companies including UserTesting (IPO), Bestow, Machinify, and Nuffsaid (acquired by ClickUp)."
             >
                 {#snippet image()}
-                    <enhanced:img class="w-full aspect-square rounded-lg" src="$lib/assets/team/tiffany-phan.jpeg" alt="Tiffany Phan" />
+                    <enhanced:img class="size-full aspect-square rounded-lg" src="$lib/assets/team/tiffany-phan.jpeg" alt="Tiffany Phan" />
                 {/snippet}
             </TeamMember>
             <TeamMember
@@ -215,7 +215,7 @@
                 bio="With more than 20 years of experience in executive leadership roles, Ricky brings a broad and diverse background across multiple roles and companies. He has played a key role in scaling high-growth tech organizations spanning SaaS, gaming, and crypto. Since becoming a Limited Partner at Maple VC in 2018, Ricky has made significant investments in companies such as Deepen.AI, Leanplum, Saga, and GetDor (acquired by Constellation Labs)."
             >
                 {#snippet image()}
-                    <enhanced:img class="w-full aspect-square rounded-lg" src="$lib/assets/team/ricky-fiel.jpeg" alt="Ricky Fiel" />
+                    <enhanced:img class="size-full aspect-square rounded-lg" src="$lib/assets/team/ricky-fiel.jpeg" alt="Ricky Fiel" />
                 {/snippet}
             </TeamMember>
             <TeamMember
@@ -225,7 +225,7 @@
                 bio="Genevive brings more than 10 years of expertise in People Operations. Having led Recruiting and HR functions across companies at various stages of startup growth on a global scale. Her investment philosophy is deeply rooted in cultivating long term partnerships with Founders. As a strategic partner, supporting entrepreneurs not only in realizing their vision, but also in building foundational processes, scaling operations and helping recruit top-tier talent—positioning teams for sustainable growth and long-term impact."
             >
                 {#snippet image()}
-                    <enhanced:img class="w-full aspect-square rounded-lg" src="$lib/assets/team/genevive-fiel.jpeg" alt="Genevive Fiel" />
+                    <enhanced:img class="size-full aspect-square rounded-lg" src="$lib/assets/team/genevive-fiel.jpeg" alt="Genevive Fiel" />
                 {/snippet}
             </TeamMember>
         </div>
