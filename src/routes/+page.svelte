@@ -19,15 +19,10 @@
         <div class="relative max-w-4xl flex flex-col items-center gap-8">
             <h1 class="text-4xl sm:text-6xl md:text-7xl text-center font-bold leading-tight bg-gradient-to-r from-gray-900 via-teal-800 to-gray-900 dark:from-white dark:via-teal-100 dark:to-white bg-clip-text text-transparent">Backing builders of what's next.</h1>
             <p class="text-xl md:text-3xl text-center text-muted-foreground leading-relaxed">We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies.</p>
-            <div class="flex flex-col md:flex-row gap-8">
-                <Button class="h-12 md:h-14 text-lg md:text-xl hover:cursor-pointer md:gap-4 md:px-6!" size="lg" onclick={() => smoothScroll("learn-more")}>
-                    Learn more
-                    <ArrowDownIcon class="size-4 md:size-6" />
-                </Button>
-                <Button class="h-12 md:h-14 text-lg md:text-xl hover:cursor-pointer md:px-6!" size="lg" variant="outline" href="/contact">
-                    Get in touch
-                </Button>
-            </div>
+            <Button class="h-12 md:h-14 text-lg md:text-xl hover:cursor-pointer md:gap-4 md:px-6!" size="lg" onclick={() => smoothScroll("learn-more")}>
+                Learn more
+                <ArrowDownIcon class="size-4 md:size-6" />
+            </Button>
         </div>
     </div>
 
