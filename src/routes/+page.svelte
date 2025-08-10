@@ -12,7 +12,7 @@
     <meta name="description" content="Backing builders of what's next. We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies." />
 </svelte:head>
 
-<div class="max-w-336 flex flex-col items-center gap-32 px-6 md:px-16">
+<div class="max-w-336 w-full flex flex-col items-center gap-32 px-6 md:px-16">
 
     <div class="relative size-full flex justify-center py-32">
         <div class="absolute inset-0 bg-gradient-to-br from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-full"></div>
@@ -134,13 +134,13 @@
 
     <Separator />
 
-    <div class="flex flex-col items-center gap-12">
+    <div class="w-full flex flex-col items-center gap-12">
         <div class="max-w-192 flex flex-col gap-4">
             <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-center">Companies we've backed</h2>
             <p class="text-xl leading-relaxed text-center text-muted-foreground">We're proud to partner with exceptional founders building the future across various industries and stages.</p>
         </div>
 
-        <Carousel.Root class="max-md:max-w-72">
+        <Carousel.Root class="w-full">
             <div class="flex justify-between items-center gap-4 pb-8">
                 <p class="text-lg font-semibold text-muted-foreground">Portfolio</p>
                 <div class="flex gap-4">
