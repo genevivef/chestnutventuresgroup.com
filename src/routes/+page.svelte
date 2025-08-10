@@ -140,7 +140,7 @@
             <p class="text-xl leading-relaxed text-center text-muted-foreground">We're proud to partner with exceptional founders building the future across various industries and stages.</p>
         </div>
 
-        <Carousel.Root class="max-md:max-w-80">
+        <Carousel.Root class="max-md:max-w-72">
             <div class="flex justify-between items-center gap-4 pb-8">
                 <p class="text-lg font-semibold text-muted-foreground">Portfolio</p>
                 <div class="flex gap-4">

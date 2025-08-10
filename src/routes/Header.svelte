@@ -8,8 +8,8 @@
 
 <header class="max-w-336 w-full flex flex-row items-center justify-between p-4 md:p-6">
     <a class="flex flex-row items-center gap-2 md:gap-4" href="/" aria-label="Home">
-        <enhanced:img class="max-h-8 md:max-h-12 w-auto rounded-lg" src="$lib/assets/cvg-logo.png" alt="Chestnut Ventures Group Logo" />
-        <span class="text-lg md:text-2xl font-semibold">Chestnut Ventures Group</span>
+        <enhanced:img class="max-h-6 min-[350px]:max-h-7 min-[375px]:max-h-8 md:max-h-12 w-auto rounded-lg" src="$lib/assets/cvg-logo.png" alt="Chestnut Ventures Group Logo" />
+        <span class="text-sm min-[350px]:text-base min-[375px]:text-lg md:text-2xl font-semibold">Chestnut Ventures Group</span>
     </a>
 
     <NavigationMenu.Root class="max-md:hidden">
