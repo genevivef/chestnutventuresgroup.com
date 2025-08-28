@@ -8,7 +8,7 @@
 	let { children } = $props();
 </script>
 
-<ModeWatcher defaultMode="dark" />
+<ModeWatcher defaultMode="light" />
 
 <Toaster richColors />
 
