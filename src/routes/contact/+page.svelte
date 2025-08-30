@@ -50,7 +50,7 @@
                     </div>
                     <div class="flex flex-row items-center gap-4">
                         <a class="max-sm:text-sm hover:text-primary" href={`mailto:${email}`}>{email}</a>
-                        <Button size="icon" variant="outline" onclick={copyEmail}>
+                        <Button size="icon" variant="outline" onclick={copyEmail} aria-label="Copy email">
                             <CopyIcon />
                         </Button>
                     </div>
