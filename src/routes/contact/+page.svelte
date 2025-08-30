@@ -23,7 +23,7 @@
 </svelte:head>
 
 <div class="relative w-full h-[50vh]">
-    <enhanced:img class="w-full h-[50vh] object-cover object-center" src="$lib/assets/contact/background.jpg" alt="Contact us" />
+    <enhanced:img class="w-full h-[50vh] object-cover object-center" src="$lib/assets/contact/background.jpg" alt="Contact us" fetchpriority="high" />
     <h1 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-4xl sm:text-6xl md:text-7xl text-white text-shadow-sm font-bold leading-tight">Contact us</h1>
 </div>
 
