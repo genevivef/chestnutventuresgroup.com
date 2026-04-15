@@ -6,17 +6,16 @@
 		ref = $bindable(null),
 		class: className,
 		children,
+		size = "default",
 		...restProps
-	}: WithElementRef<HTMLAttributes<HTMLDivElement>> = $props();
+	}: WithElementRef<HTMLAttributes<HTMLDivElement>> & { size?: "default" | "sm" } = $props();
 </script>
 
 <div
 	bind:this={ref}
 	data-slot="card"
-	class={cn(
-		"bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",
-		className
-	)}
+	data-size={size}
+	class={cn("ring-foreground/10 bg-card text-card-foreground gap-6 overflow-hidden rounded-2xl py-6 text-sm ring-1 has-[>img:first-child]:pt-0 data-[size=sm]:gap-4 data-[size=sm]:py-4 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group/card flex flex-col", className)}
 	{...restProps}
 >
 	{@render children?.()}
