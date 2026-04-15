@@ -18,10 +18,10 @@
 
 <Toaster richColors />
 
-<div class="min-h-screen flex flex-col items-center">
+<div class="flex min-h-screen flex-col items-center">
   <Header />
 
-  <main class="grow w-full h-full flex flex-col items-center">
+  <main class="flex h-full w-full grow flex-col items-center">
     {@render children()}
   </main>
 

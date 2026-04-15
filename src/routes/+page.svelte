@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { Button } from "$lib/components/ui/button";
-  import { Separator } from "$lib/components/ui/separator";
-  import * as Carousel from "$lib/components/ui/carousel";
-  import TeamMember from "$lib/components/team-member.svelte";
-  import ArrowDownIcon from "@lucide/svelte/icons/arrow-down";
-  import { smoothScroll } from "$lib/utils";
+  import { Button } from '$lib/components/ui/button';
+  import { Separator } from '$lib/components/ui/separator';
+  import * as Carousel from '$lib/components/ui/carousel';
+  import TeamMember from '$lib/components/team-member.svelte';
+  import ArrowDownIcon from '@lucide/svelte/icons/arrow-down';
+  import { smoothScroll } from '$lib/utils';
 </script>
 
 <svelte:head>
@@ -15,27 +15,25 @@
   />
 </svelte:head>
 
-<div class="max-w-336 w-full flex flex-col items-center gap-32 px-6 md:px-16">
-  <div class="relative size-full flex justify-center py-32">
+<div class="flex w-full max-w-336 flex-col items-center gap-32 px-6 md:px-16">
+  <div class="relative flex size-full justify-center py-32">
     <div
-      class="absolute inset-0 bg-gradient-to-br from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-full"
+      class="absolute inset-0 rounded-full bg-gradient-to-br from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
     ></div>
-    <div class="relative max-w-4xl flex flex-col items-center gap-8">
+    <div class="relative flex max-w-4xl flex-col items-center gap-8">
       <h1
-        class="text-4xl sm:text-6xl md:text-7xl text-center font-bold leading-tight bg-gradient-to-r from-gray-900 via-teal-800 to-gray-900 dark:from-white dark:via-teal-100 dark:to-white bg-clip-text text-transparent"
+        class="bg-gradient-to-r from-gray-900 via-teal-800 to-gray-900 bg-clip-text text-center text-4xl leading-tight font-bold text-transparent sm:text-6xl md:text-7xl dark:from-white dark:via-teal-100 dark:to-white"
       >
         Backing builders of what's next.
       </h1>
-      <p
-        class="text-xl md:text-3xl text-center text-muted-foreground leading-relaxed"
-      >
-        We are a venture firm that leads Pre-Seed, Seed and Series A rounds in
-        standout software companies.
+      <p class="text-center text-xl leading-relaxed text-muted-foreground md:text-3xl">
+        We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software
+        companies.
       </p>
       <Button
-        class="h-12 md:h-14 text-lg md:text-xl hover:cursor-pointer md:gap-4 md:px-6!"
+        class="h-12 text-lg hover:cursor-pointer md:h-14 md:gap-4 md:px-6! md:text-xl"
         size="lg"
-        onclick={() => smoothScroll("learn-more")}
+        onclick={() => smoothScroll('learn-more')}
       >
         Learn more
         <ArrowDownIcon class="size-4 md:size-6" />
@@ -43,22 +41,19 @@
     </div>
   </div>
 
-  <div class="flex flex-col gap-16 md:gap-32 pt-8 md:pt-16" id="learn-more">
-    <div class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32">
-      <div class="md:basis-1/2 flex flex-col gap-8">
-        <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
-          Investing across frontiers
-        </h2>
-        <p class="text-xl text-muted-foreground leading-relaxed">
-          From AI and fintech to vertical SaaS and infrastructure, we partner
-          with founders turning ambitious ideas into category-defining
-          businesses.
+  <div class="flex flex-col gap-16 pt-8 md:gap-32 md:pt-16" id="learn-more">
+    <div class="flex flex-col gap-16 md:flex-row md:items-center lg:gap-32">
+      <div class="flex flex-col gap-8 md:basis-1/2">
+        <h2 class="text-4xl leading-tight font-bold lg:text-5xl">Investing across frontiers</h2>
+        <p class="text-xl leading-relaxed text-muted-foreground">
+          From AI and fintech to vertical SaaS and infrastructure, we partner with founders turning
+          ambitious ideas into category-defining businesses.
         </p>
       </div>
 
-      <div class="md:basis-1/2 relative">
+      <div class="relative md:basis-1/2">
         <div
-          class="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"
+          class="absolute inset-0 rounded-3xl bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
         ></div>
         <svg
           class="relative w-full"
@@ -130,22 +125,20 @@
       </div>
     </div>
 
-    <div
-      class="flex flex-col md:flex-row-reverse md:items-center gap-16 lg:gap-32"
-    >
-      <div class="md:basis-1/2 flex flex-col gap-8">
-        <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+    <div class="flex flex-col gap-16 md:flex-row-reverse md:items-center lg:gap-32">
+      <div class="flex flex-col gap-8 md:basis-1/2">
+        <h2 class="text-4xl leading-tight font-bold lg:text-5xl">
           Strategic partnerships at every stage
         </h2>
-        <p class="text-xl text-muted-foreground leading-relaxed">
-          We focus on investments at any stage where we can make the biggest
-          impact, leading rounds and providing hands-on support.
+        <p class="text-xl leading-relaxed text-muted-foreground">
+          We focus on investments at any stage where we can make the biggest impact, leading rounds
+          and providing hands-on support.
         </p>
       </div>
 
-      <div class="md:basis-1/2 relative">
+      <div class="relative md:basis-1/2">
         <div
-          class="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"
+          class="absolute inset-0 rounded-3xl bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
         ></div>
         <svg
           class="relative w-full"
@@ -197,46 +190,32 @@
             r="40"
             style="animation-delay: 3s;"
           />
-          <text
-            x="120"
-            y="205"
-            text-anchor="middle"
-            class="fill-white text-sm font-semibold">Pre-seed</text
+          <text x="120" y="205" text-anchor="middle" class="fill-white text-sm font-semibold"
+            >Pre-seed</text
           >
-          <text
-            x="200"
-            y="105"
-            text-anchor="middle"
-            class="fill-white text-sm font-semibold">Seed</text
+          <text x="200" y="105" text-anchor="middle" class="fill-white text-sm font-semibold"
+            >Seed</text
           >
-          <text
-            x="280"
-            y="225"
-            text-anchor="middle"
-            class="fill-white text-sm font-semibold">Series A</text
+          <text x="280" y="225" text-anchor="middle" class="fill-white text-sm font-semibold"
+            >Series A</text
           >
         </svg>
       </div>
     </div>
 
-    <div
-      class="flex flex-col md:flex-row md:items-center gap-16 lg:gap-32 md:py-24"
-    >
-      <div class="md:basis-1/2 flex flex-col gap-8">
-        <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
-          Speed without interference
-        </h2>
-        <p class="text-xl text-muted-foreground leading-relaxed">
-          We back founders early and help them move faster. Whether it's
-          building the first team, landing early customers, or shaping product
-          strategy, we're here to support the journey—without getting in the
-          way.
+    <div class="flex flex-col gap-16 md:flex-row md:items-center md:py-24 lg:gap-32">
+      <div class="flex flex-col gap-8 md:basis-1/2">
+        <h2 class="text-4xl leading-tight font-bold lg:text-5xl">Speed without interference</h2>
+        <p class="text-xl leading-relaxed text-muted-foreground">
+          We back founders early and help them move faster. Whether it's building the first team,
+          landing early customers, or shaping product strategy, we're here to support the
+          journey—without getting in the way.
         </p>
       </div>
 
-      <div class="md:basis-1/2 relative">
+      <div class="relative md:basis-1/2">
         <div
-          class="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"
+          class="absolute inset-0 rounded-3xl bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
         ></div>
         <svg
           class="relative w-full"
@@ -308,26 +287,17 @@
             stroke-width="4"
             stroke-linecap="round"
           />
-          <circle class="fill-blue-500/40 stage s1" cx="75" cy="75" r="25" />
-          <circle class="fill-blue-500/40 stage s2" cx="300" cy="75" r="25" />
-          <circle class="fill-blue-500/40 stage s3" cx="525" cy="75" r="25" />
-          <text
-            class="stage-label dark:fill-white"
-            style="text-anchor:middle;"
-            x="75"
-            y="115">Ideation</text
+          <circle class="stage s1 fill-blue-500/40" cx="75" cy="75" r="25" />
+          <circle class="stage s2 fill-blue-500/40" cx="300" cy="75" r="25" />
+          <circle class="stage s3 fill-blue-500/40" cx="525" cy="75" r="25" />
+          <text class="stage-label dark:fill-white" style="text-anchor:middle;" x="75" y="115"
+            >Ideation</text
           >
-          <text
-            class="stage-label dark:fill-white"
-            style="text-anchor:middle;"
-            x="300"
-            y="115">Growth</text
+          <text class="stage-label dark:fill-white" style="text-anchor:middle;" x="300" y="115"
+            >Growth</text
           >
-          <text
-            class="stage-label dark:fill-white"
-            style="text-anchor:middle;"
-            x="525"
-            y="115">Scale</text
+          <text class="stage-label dark:fill-white" style="text-anchor:middle;" x="525" y="115"
+            >Scale</text
           >
           <circle class="fill-blue-500/80" cy="75" r="12">
             <animate
@@ -352,19 +322,19 @@
 
   <Separator />
 
-  <div class="w-full flex flex-col items-center gap-12">
-    <div class="max-w-192 flex flex-col gap-4">
-      <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-center">
+  <div class="flex w-full flex-col items-center gap-12">
+    <div class="flex max-w-192 flex-col gap-4">
+      <h2 class="text-center text-4xl leading-tight font-bold lg:text-5xl">
         Companies we've backed
       </h2>
-      <p class="text-xl leading-relaxed text-center text-muted-foreground">
-        We're proud to partner with exceptional founders building the future
-        across various industries and stages.
+      <p class="text-center text-xl leading-relaxed text-muted-foreground">
+        We're proud to partner with exceptional founders building the future across various
+        industries and stages.
       </p>
     </div>
 
     <Carousel.Root class="w-full">
-      <div class="flex justify-between items-center gap-4 pb-8">
+      <div class="flex items-center justify-between gap-4 pb-8">
         <p class="text-lg font-semibold text-muted-foreground">Portfolio</p>
         <div class="flex gap-4">
           <Carousel.Previous />
@@ -384,9 +354,7 @@
               src="$lib/assets/portfolio/deepen.png"
               alt="Deepen AI Logo"
             />
-            <p class="group-hover:underline text-2xl font-semibold">
-              Deepen AI
-            </p>
+            <p class="text-2xl font-semibold group-hover:underline">Deepen AI</p>
           </a>
         </Carousel.Item>
         <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
@@ -401,9 +369,7 @@
               src="$lib/assets/portfolio/transastra.png"
               alt="TransAstra Logo"
             />
-            <p class="group-hover:underline text-2xl font-semibold">
-              TransAstra
-            </p>
+            <p class="text-2xl font-semibold group-hover:underline">TransAstra</p>
           </a>
         </Carousel.Item>
         <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
@@ -418,9 +384,7 @@
               src="$lib/assets/portfolio/pathcision.png"
               alt="PathCision Medicine Logo"
             />
-            <p class="group-hover:underline text-2xl font-semibold">
-              PathCision Medicine
-            </p>
+            <p class="text-2xl font-semibold group-hover:underline">PathCision Medicine</p>
           </a>
         </Carousel.Item>
         <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
@@ -435,7 +399,7 @@
               src="$lib/assets/portfolio/leanplum.png"
               alt="Leanplum Logo"
             />
-            <p class="group-hover:underline text-2xl font-semibold">Leanplum</p>
+            <p class="text-2xl font-semibold group-hover:underline">Leanplum</p>
           </a>
         </Carousel.Item>
         <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
@@ -445,12 +409,8 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <enhanced:img
-              class="rounded-lg"
-              src="$lib/assets/portfolio/saga.png"
-              alt="Saga Logo"
-            />
-            <p class="group-hover:underline text-2xl font-semibold">Saga</p>
+            <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/saga.png" alt="Saga Logo" />
+            <p class="text-2xl font-semibold group-hover:underline">Saga</p>
           </a>
         </Carousel.Item>
         <Carousel.Item class="basis-full md:basis-1/2 lg:basis-1/3">
@@ -460,12 +420,8 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <enhanced:img
-              class="rounded-lg"
-              src="$lib/assets/portfolio/dor.png"
-              alt="Dor Logo"
-            />
-            <p class="group-hover:underline text-2xl font-semibold">Dor</p>
+            <enhanced:img class="rounded-lg" src="$lib/assets/portfolio/dor.png" alt="Dor Logo" />
+            <p class="text-2xl font-semibold group-hover:underline">Dor</p>
           </a>
         </Carousel.Item>
       </Carousel.Content>
@@ -475,17 +431,15 @@
   <Separator />
 
   <div class="flex flex-col items-center gap-12">
-    <div class="max-w-192 flex flex-col gap-4">
-      <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-center">
-        Meet the team
-      </h2>
-      <p class="text-xl leading-relaxed text-center text-muted-foreground">
-        Experienced investors and operators committed to helping founders build
-        exceptional companies.
+    <div class="flex max-w-192 flex-col gap-4">
+      <h2 class="text-center text-4xl leading-tight font-bold lg:text-5xl">Meet the team</h2>
+      <p class="text-center text-xl leading-relaxed text-muted-foreground">
+        Experienced investors and operators committed to helping founders build exceptional
+        companies.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
       <TeamMember
         name="Tiffany Phan"
         role="Founder & Managing Partner"
@@ -494,7 +448,7 @@
       >
         {#snippet image()}
           <enhanced:img
-            class="size-full aspect-square rounded-lg"
+            class="aspect-square size-full rounded-lg"
             src="$lib/assets/team/tiffany-phan.jpeg"
             alt="Tiffany Phan"
           />
@@ -508,7 +462,7 @@
       >
         {#snippet image()}
           <enhanced:img
-            class="size-full aspect-square rounded-lg"
+            class="aspect-square size-full rounded-lg"
             src="$lib/assets/team/ricky-fiel.jpeg"
             alt="Ricky Fiel"
           />
@@ -522,7 +476,7 @@
       >
         {#snippet image()}
           <enhanced:img
-            class="size-full aspect-square rounded-lg"
+            class="aspect-square size-full rounded-lg"
             src="$lib/assets/team/genevive-fiel.jpeg"
             alt="Genevive Fiel"
           />
@@ -535,19 +489,17 @@
 
   <div class="relative">
     <div
-      class="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl rounded-3xl"
+      class="absolute inset-0 rounded-3xl bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
     ></div>
-    <div class="relative max-w-192 flex flex-col items-center gap-4">
-      <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-center">
+    <div class="relative flex max-w-192 flex-col items-center gap-4">
+      <h2 class="text-center text-4xl leading-tight font-bold lg:text-5xl">
         Ready to build the future?
       </h2>
-      <p class="text-xl leading-relaxed text-center text-muted-foreground">
-        We're always looking for exceptional founders with bold ideas. Contact
-        us to start working together and build something extraordinary.
+      <p class="text-center text-xl leading-relaxed text-muted-foreground">
+        We're always looking for exceptional founders with bold ideas. Contact us to start working
+        together and build something extraordinary.
       </p>
-      <Button class="h-12 text-lg" size="lg" href="/contact"
-        >Get in touch</Button
-      >
+      <Button class="h-12 text-lg" size="lg" href="/contact">Get in touch</Button>
     </div>
   </div>
 
