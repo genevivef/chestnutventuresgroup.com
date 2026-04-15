@@ -18,11 +18,11 @@
 <div class="flex w-full max-w-336 flex-col items-center gap-32 px-6 md:px-16">
   <div class="relative flex size-full justify-center py-32">
     <div
-      class="absolute inset-0 rounded-full bg-gradient-to-br from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
+      class="absolute inset-0 rounded-full bg-linear-to-br from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
     ></div>
     <div class="relative flex max-w-4xl flex-col items-center gap-8">
       <h1
-        class="bg-gradient-to-r from-gray-900 via-teal-800 to-gray-900 bg-clip-text text-center text-4xl leading-tight font-bold text-transparent sm:text-6xl md:text-7xl dark:from-white dark:via-teal-100 dark:to-white"
+        class="bg-linear-to-r from-gray-900 via-teal-800 to-gray-900 bg-clip-text text-center text-4xl leading-tight font-bold text-transparent sm:text-6xl md:text-7xl dark:from-white dark:via-teal-100 dark:to-white"
       >
         Backing builders of what's next.
       </h1>
@@ -53,7 +53,7 @@
 
       <div class="relative md:basis-1/2">
         <div
-          class="absolute inset-0 rounded-3xl bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
+          class="absolute inset-0 rounded-3xl bg-linear-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
         ></div>
         <svg
           class="relative w-full"
@@ -138,7 +138,7 @@
 
       <div class="relative md:basis-1/2">
         <div
-          class="absolute inset-0 rounded-3xl bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
+          class="absolute inset-0 rounded-3xl bg-linear-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
         ></div>
         <svg
           class="relative w-full"
@@ -215,7 +215,7 @@
 
       <div class="relative md:basis-1/2">
         <div
-          class="absolute inset-0 rounded-3xl bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
+          class="absolute inset-0 rounded-3xl bg-linear-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
         ></div>
         <svg
           class="relative w-full"
@@ -323,7 +323,7 @@
   <Separator />
 
   <div class="flex w-full flex-col items-center gap-12">
-    <div class="flex max-w-192 flex-col gap-4">
+    <div class="flex max-w-3xl flex-col gap-4">
       <h2 class="text-center text-4xl leading-tight font-bold lg:text-5xl">
         Companies we've backed
       </h2>
@@ -431,7 +431,7 @@
   <Separator />
 
   <div class="flex flex-col items-center gap-12">
-    <div class="flex max-w-192 flex-col gap-4">
+    <div class="flex max-w-3xl flex-col gap-4">
       <h2 class="text-center text-4xl leading-tight font-bold lg:text-5xl">Meet the team</h2>
       <p class="text-center text-xl leading-relaxed text-muted-foreground">
         Experienced investors and operators committed to helping founders build exceptional
@@ -489,9 +489,9 @@
 
   <div class="relative">
     <div
-      class="absolute inset-0 rounded-3xl bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
+      class="absolute inset-0 rounded-3xl bg-linear-to-r from-teal-400 via-blue-400 to-purple-400 opacity-20 blur-3xl"
     ></div>
-    <div class="relative flex max-w-192 flex-col items-center gap-4">
+    <div class="relative flex max-w-3xl flex-col items-center gap-4">
       <h2 class="text-center text-4xl leading-tight font-bold lg:text-5xl">
         Ready to build the future?
       </h2>

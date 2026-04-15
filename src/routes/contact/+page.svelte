@@ -56,7 +56,7 @@
     </div>
 
     <Card.Root
-      class="basis-1/2 bg-gradient-to-br from-teal-400/20 via-blue-400/20 to-purple-400/20"
+      class="basis-1/2 bg-linear-to-br from-teal-400/20 via-blue-400/20 to-purple-400/20"
     >
       <Card.Header>
         <Card.Title class="text-2xl leading-tight font-bold lg:text-3xl">Contact</Card.Title>
