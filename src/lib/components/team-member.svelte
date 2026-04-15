@@ -57,11 +57,11 @@
     </div>
   </Card.Header>
   <Card.Content>
-    <p class="pb-6 text-center text-lg font-semibold text-primary">{role}</p>
+    <p class="pb-6 text-center text-lg font-semibold text-primary dark:text-teal-500">{role}</p>
     <p class="leading-relaxed text-muted-foreground">
       {readMore ? bio : shortenedBio}
     </p>
-    <Button class="px-0 text-primary" onclick={toggleReadMore} variant="link">
+    <Button class="px-0 text-primary dark:text-teal-500" onclick={toggleReadMore} variant="link">
       {readMore ? 'Show Less' : 'Read More'}
     </Button>
   </Card.Content>

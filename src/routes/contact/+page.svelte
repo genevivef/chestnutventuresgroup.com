@@ -68,12 +68,12 @@
       </Card.Content>
       <Card.Footer>
         <div class="flex flex-col gap-4">
-          <div class="flex flex-row items-center gap-4 text-primary">
+          <div class="flex flex-row items-center gap-4 text-primary dark:text-teal-500">
             <MailIcon />
             <span class="text-lg">Email</span>
           </div>
           <div class="flex flex-row items-center gap-4">
-            <a class="hover:text-primary max-sm:text-sm" href={`mailto:${email}`}>{email}</a>
+            <a class="hover:text-primary dark:hover:text-teal-500 max-sm:text-sm" href={`mailto:${email}`}>{email}</a>
             <Button size="icon" variant="outline" onclick={copyEmail} aria-label="Copy email">
               <CopyIcon />
             </Button>

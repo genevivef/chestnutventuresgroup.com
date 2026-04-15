@@ -18,7 +18,7 @@
     &copy; {currentYear} Chestnut Ventures Group
   </div>
   <div class="flex flex-row items-center gap-16 max-md:w-full max-md:justify-between">
-    <Button class="text-primary" variant="link" href="/contact">Contact</Button>
+    <Button class="text-primary dark:text-teal-500" variant="link" href="/contact">Contact</Button>
     <DropdownMenu.Root>
       <DropdownMenu.Trigger class={buttonVariants({ variant: 'outline', size: 'icon' })}>
         <SunIcon
