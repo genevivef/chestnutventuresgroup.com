@@ -26,7 +26,7 @@
       return res.trim();
     }
   }
-  const shortenedBio = getFirst2Sentences(bio);
+  const shortenedBio = $derived(getFirst2Sentences(bio));
 
   let readMore = $state(false);
   function toggleReadMore() {
