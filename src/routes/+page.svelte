@@ -10,6 +10,7 @@
 	import TimelineGraphic from '#lib/components/home/timeline-graphic.svelte';
 	import SectionHeader from '#lib/components/home/section-header.svelte';
 	import Seo from '#lib/components/site/seo.svelte';
+	import { origin, siteName } from '#lib/site.js';
 	import TeamMember, { type Member } from '#lib/components/home/team-member.svelte';
 	import deepen from '#lib/assets/portfolio/deepen.png?enhanced';
 	import transastra from '#lib/assets/portfolio/transastra.png?enhanced';
@@ -69,11 +70,48 @@
 			linkedin: 'https://www.linkedin.com/in/genevive-fiel-4822866a'
 		}
 	];
+
+	// schema.org data for search engines: who the firm is and who founded it.
+	const structuredData = {
+		'@context': 'https://schema.org',
+		'@graph': [
+			{
+				'@type': 'Organization',
+				'@id': `${origin}/#organization`,
+				name: siteName,
+				url: `${origin}/`,
+				logo: `${origin}/logo.png`,
+				email: 'info@chestnutventuresgroup.com',
+				description:
+					'We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies.',
+				founder: team.map((member) => ({
+					'@type': 'Person',
+					name: member.name,
+					jobTitle: member.role,
+					sameAs: member.linkedin
+				}))
+			},
+			{
+				'@type': 'WebSite',
+				'@id': `${origin}/#website`,
+				name: siteName,
+				url: `${origin}/`,
+				publisher: { '@id': `${origin}/#organization` }
+			}
+		]
+	};
+
+	// Escaping `<` keeps the JSON from closing the script tag early.
+	const jsonLd = JSON.stringify(structuredData).replace(/</g, '\\u003c');
 </script>
 
 <Seo
 	description="Backing builders of what’s next. We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies."
 />
+
+<svelte:head>
+	{@html `<script type="application/ld+json">${jsonLd}<\/script>`}
+</svelte:head>
 
 <section class="wrap pt-14 pb-16 lg:pt-30 lg:pb-0" aria-labelledby="hero-heading">
 	<h1 id="hero-heading" class="max-w-[10.5em] text-display font-normal text-balance">
