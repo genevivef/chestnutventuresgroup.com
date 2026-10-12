@@ -2,6 +2,7 @@
 	import CheckIcon from '@lucide/svelte/icons/check';
 	import CopyIcon from '@lucide/svelte/icons/copy';
 	import { Button } from '#lib/components/ui/button/index.js';
+	import Seo from '#lib/components/site/seo.svelte';
 
 	const email = 'info@chestnutventuresgroup.com';
 
@@ -22,13 +23,10 @@
 	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
-<svelte:head>
-	<title>Contact - Chestnut Ventures Group</title>
-	<meta
-		name="description"
-		content="Get in touch with Chestnut Ventures Group. We’re here to help you build enduring businesses."
-	/>
-</svelte:head>
+<Seo
+	title="Contact"
+	description="Get in touch with Chestnut Ventures Group. We’re here to help you build enduring businesses."
+/>
 
 <section class="wrap pt-14 pb-24 lg:pt-30 lg:pb-40" aria-labelledby="contact-us-heading">
 	<h1 id="contact-us-heading" class="text-display font-normal">Contact us</h1>

@@ -9,6 +9,7 @@
 	import StagesGraphic from '#lib/components/home/stages-graphic.svelte';
 	import TimelineGraphic from '#lib/components/home/timeline-graphic.svelte';
 	import SectionHeader from '#lib/components/home/section-header.svelte';
+	import Seo from '#lib/components/site/seo.svelte';
 	import TeamMember, { type Member } from '#lib/components/home/team-member.svelte';
 	import deepen from '#lib/assets/portfolio/deepen.png?enhanced';
 	import transastra from '#lib/assets/portfolio/transastra.png?enhanced';
@@ -70,13 +71,9 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Chestnut Ventures Group</title>
-	<meta
-		name="description"
-		content="Backing builders of what’s next. We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies."
-	/>
-</svelte:head>
+<Seo
+	description="Backing builders of what’s next. We are a venture firm that leads Pre-Seed, Seed and Series A rounds in standout software companies."
+/>
 
 <section class="wrap pt-14 pb-16 lg:pt-30 lg:pb-0" aria-labelledby="hero-heading">
 	<h1 id="hero-heading" class="max-w-[10.5em] text-display font-normal text-balance">
