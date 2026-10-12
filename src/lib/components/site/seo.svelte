@@ -1,12 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { origin, siteName } from '#lib/site.js';
 
 	let { title, description }: { title?: string; description: string } = $props();
-
-	// Absolute URLs are required for canonical and Open Graph tags; `page.url.origin`
-	// is a placeholder while pages are prerendered, so the origin is fixed here.
-	const origin = 'https://chestnutventuresgroup.com';
-	const siteName = 'Chestnut Ventures Group';
 
 	const fullTitle = $derived(title ? `${title} - ${siteName}` : siteName);
 	const url = $derived(new URL(page.url.pathname, origin).href);
