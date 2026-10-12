@@ -249,12 +249,9 @@
 }
 
 /*
- * Section graphics: `inView` sets these attributes. A graphic's animations start
- * the first time it scrolls into view, and pause while it is off screen.
+ * Section graphics: `inView` sets `data-inview`. Animations hold their current
+ * frame while a graphic is off screen, so they play once it scrolls into view.
  */
-[data-seen='false'] * {
-  animation-name: none !important;
-}
 [data-inview='false'] * {
   animation-play-state: paused !important;
 }
