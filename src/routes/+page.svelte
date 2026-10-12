@@ -12,15 +12,15 @@
   import Seo from '#lib/components/site/seo.svelte';
   import { origin, siteName } from '#lib/site.js';
   import TeamMember, { type Member } from '#lib/components/home/team-member.svelte';
-  import deepen from '#lib/assets/portfolio/deepen.png?enhanced';
-  import transastra from '#lib/assets/portfolio/transastra.png?enhanced';
-  import pathcision from '#lib/assets/portfolio/pathcision.png?enhanced';
-  import leanplum from '#lib/assets/portfolio/leanplum.png?enhanced';
-  import saga from '#lib/assets/portfolio/saga.png?enhanced';
-  import dor from '#lib/assets/portfolio/dor.png?enhanced';
-  import tiffany from '#lib/assets/team/tiffany-phan.jpeg?enhanced';
-  import ricky from '#lib/assets/team/ricky-fiel.jpeg?enhanced';
-  import genevive from '#lib/assets/team/genevive-fiel.jpeg?enhanced';
+  import deepen from '#lib/assets/portfolio/deepen.png?w=1320;960;640;400&enhanced';
+  import transastra from '#lib/assets/portfolio/transastra.png?w=1320;960;640;400&enhanced';
+  import pathcision from '#lib/assets/portfolio/pathcision.png?w=1320;960;640;400&enhanced';
+  import leanplum from '#lib/assets/portfolio/leanplum.png?w=1320;960;640;400&enhanced';
+  import saga from '#lib/assets/portfolio/saga.png?w=1320;960;640;400&enhanced';
+  import dor from '#lib/assets/portfolio/dor.png?w=1320;960;640;400&enhanced';
+  import tiffany from '#lib/assets/team/tiffany-phan.jpeg?w=1040;800;560;400&enhanced';
+  import ricky from '#lib/assets/team/ricky-fiel.jpeg?w=542;400&enhanced';
+  import genevive from '#lib/assets/team/genevive-fiel.jpeg?w=1040;800;560;400&enhanced';
 
   const fields = [
     { href: '#frontiers', label: 'Investing across frontiers', key: 'bg-violet-vivid' },
@@ -206,7 +206,8 @@
           <enhanced:img
             src={company.logo}
             alt=""
-            sizes="(min-width: 1024px) 30vw, (min-width: 640px) 260px, 45vw"
+            sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 640px) 252px, calc(50vw - 28px)"
+            loading="lazy"
             class="block aspect-video h-auto w-full object-cover"
           />
           <span class="flex items-start justify-between gap-2 pt-4 lg:gap-4 lg:pt-6">
