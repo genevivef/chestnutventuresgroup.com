@@ -7,15 +7,15 @@ import type { Attachment } from 'svelte/attachments';
  * screen. Without JavaScript neither attribute is set, so animations just run.
  */
 export const inView: Attachment<HTMLElement> = (node) => {
-	const observer = new IntersectionObserver(
-		([entry]) => {
-			node.dataset.inview = String(entry.isIntersecting);
-			if (entry.isIntersecting) node.dataset.seen = 'true';
-			else if (node.dataset.seen !== 'true') node.dataset.seen = 'false';
-		},
-		{ threshold: 0.2 }
-	);
-	observer.observe(node);
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      node.dataset.inview = String(entry.isIntersecting);
+      if (entry.isIntersecting) node.dataset.seen = 'true';
+      else if (node.dataset.seen !== 'true') node.dataset.seen = 'false';
+    },
+    { threshold: 0.2 }
+  );
+  observer.observe(node);
 
-	return () => observer.disconnect();
+  return () => observer.disconnect();
 };
