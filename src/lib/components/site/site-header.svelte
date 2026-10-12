@@ -9,28 +9,28 @@
   ];
 </script>
 
-<header class="wrap flex h-18 items-center justify-between lg:h-26">
+<header class="wrap flex h-18 items-center justify-between gap-1 lg:h-26">
   <a
     href={resolve('/')}
-    class="inline-flex min-h-11 items-center gap-2.5 lg:gap-4"
+    class="inline-flex min-h-11 min-w-0 items-center gap-2.5 max-[379px]:gap-2 lg:gap-4"
     aria-label="Chestnut Ventures Group, home"
   >
-    <Logo class="h-5.5 lg:h-7.5" />
+    <Logo class="h-5.5 max-[379px]:h-5 lg:h-7.5" />
     <span
-      class="text-[15px] font-medium tracking-[-0.01em] whitespace-nowrap text-foreground lg:text-lg"
+      class="text-[15px] font-medium tracking-[-0.01em] whitespace-nowrap text-foreground max-[379px]:text-[13px] max-[379px]:leading-tight max-[379px]:text-balance max-[379px]:whitespace-normal lg:text-lg"
     >
       Chestnut Ventures Group
     </span>
   </a>
 
-  <nav aria-label="Main">
-    <ul class="-mr-3 flex lg:mr-0 lg:gap-1">
+  <nav aria-label="Main" class="shrink-0">
+    <ul class="-mr-3 flex max-[379px]:-mr-2 lg:mr-0 lg:gap-1">
       {#each links as link (link.href)}
         <li class={link.class}>
           <a
             href={link.href}
             aria-current={page.url.pathname === link.href ? 'page' : undefined}
-            class="inline-flex min-h-11 items-center px-3 text-base font-[450] decoration-[1.5px] underline-offset-6 aria-[current=page]:underline lg:px-3.5 lg:underline-offset-7"
+            class="inline-flex min-h-11 items-center px-3 text-base max-[379px]:px-2 font-[450] decoration-[1.5px] underline-offset-6 aria-[current=page]:underline lg:px-3.5 lg:underline-offset-7"
           >
             {link.label}
           </a>
