@@ -1,29 +1,31 @@
 <script lang="ts">
   import './layout.css';
-  import favicon from '$lib/assets/favicon.png';
-  import Header from '$lib/components/header.svelte';
-  import Footer from '$lib/components/footer.svelte';
   import { ModeWatcher } from 'mode-watcher';
-  import { Toaster } from '$lib/components/ui/sonner';
+  import favicon from '#lib/assets/favicon.svg';
+  import SiteHeader from '#lib/components/site/site-header.svelte';
+  import SiteFooter from '#lib/components/site/site-footer.svelte';
+  import type { LayoutProps } from './$types';
 
-  let { children } = $props();
+  let { children }: LayoutProps = $props();
 </script>
 
 <svelte:head>
   <link rel="icon" href={favicon} />
-  <meta property="og:image" content="https://chestnutventuresgroup.com/logo.png" />
 </svelte:head>
 
 <ModeWatcher defaultMode="light" />
 
-<Toaster richColors />
+<a
+  href="#main"
+  class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-foreground focus:px-4 focus:py-3 focus:text-background"
+>
+  Skip to content
+</a>
 
-<div class="flex min-h-screen flex-col items-center">
-  <Header />
-
-  <main class="flex h-full w-full grow flex-col items-center">
+<div class="flex min-h-svh flex-col">
+  <SiteHeader />
+  <main id="main" class="flex-1">
     {@render children()}
   </main>
-
-  <Footer />
+  <SiteFooter />
 </div>

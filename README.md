@@ -1,32 +1,18 @@
 # [chestnutventuresgroup.com](https://chestnutventuresgroup.com)
 
-## Tech stack
+The website for Chestnut Ventures Group, a venture capital firm that invests in early-stage startups.
 
-- [Svelte](https://svelte.dev)
-- [SvelteKit](https://svelte.dev/docs/kit)
-- [Tailwind CSS](https://tailwindcss.com)
-- [shadcn-svelte](https://www.shadcn-svelte.com)
-- [Cloudflare Workers](https://workers.cloudflare.com)
+## Tech Stack
 
-## Developing
+- **[Svelte](https://svelte.dev)** (Svelte 5) - frontend framework
+- **[SvelteKit](https://svelte.dev/docs/kit)** (SvelteKit 3) - full-stack framework
+- **[Tailwind CSS](https://tailwindcss.com)** (Tailwind 4) - styling
+- **[shadcn-svelte](https://shadcn-svelte.com)** - UI components (built on **[bits-ui](https://bits-ui.com)**)
+- **[Cloudflare Workers](https://developers.cloudflare.com/workers/)** - deployment platform
 
-Once you've installed dependencies with `npm install`, start a development server:
+## Getting Started
 
 ```sh
+npm i
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
