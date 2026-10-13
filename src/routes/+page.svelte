@@ -12,15 +12,24 @@
   import Seo from '#lib/components/site/seo.svelte';
   import { origin, siteName } from '#lib/site.js';
   import TeamMember, { type Member } from '#lib/components/home/team-member.svelte';
-  import deepen from '#lib/assets/portfolio/deepen.png?enhanced';
-  import transastra from '#lib/assets/portfolio/transastra.png?enhanced';
-  import pathcision from '#lib/assets/portfolio/pathcision.png?enhanced';
-  import leanplum from '#lib/assets/portfolio/leanplum.png?enhanced';
-  import saga from '#lib/assets/portfolio/saga.png?enhanced';
-  import dor from '#lib/assets/portfolio/dor.png?enhanced';
-  import tiffany from '#lib/assets/team/tiffany-phan.jpeg?enhanced';
-  import ricky from '#lib/assets/team/ricky-fiel.jpeg?enhanced';
-  import genevive from '#lib/assets/team/genevive-fiel.jpeg?enhanced';
+  import type { Picture } from '@sveltejs/enhanced-img';
+
+  // TODO: Switch back to a plain `?enhanced` import per image once @sveltejs/enhanced-img
+  // generates widths from an <enhanced:img>'s `sizes` for imported images too
+  // (https://github.com/sveltejs/kit/issues/12099). Until then imported images only get
+  // 1x/2x versions, so these globs request their widths explicitly.
+  const logos = import.meta.glob<Picture>('./*.png', {
+    base: '/src/lib/assets/portfolio',
+    eager: true,
+    import: 'default',
+    query: { enhanced: true, w: '1320;960;640;400' }
+  });
+  const photos = import.meta.glob<Picture>('./*.jpeg', {
+    base: '/src/lib/assets/team',
+    eager: true,
+    import: 'default',
+    query: { enhanced: true, w: '1040;800;560;400' }
+  });
 
   const fields = [
     { href: '#frontiers', label: 'Investing across frontiers', key: 'bg-violet-vivid' },
@@ -29,29 +38,49 @@
   ];
 
   const companies = [
-    { name: 'Deepen AI', domain: 'deepen.ai', href: 'https://www.deepen.ai/', logo: deepen },
+    {
+      name: 'Deepen AI',
+      domain: 'deepen.ai',
+      href: 'https://www.deepen.ai/',
+      logo: logos['./deepen.png']
+    },
     {
       name: 'TransAstra',
       domain: 'transastra.com',
       href: 'https://transastra.com/',
-      logo: transastra
+      logo: logos['./transastra.png']
     },
     {
       name: 'PathCision Medicine',
       domain: 'pathcisionmedicine.com',
       href: 'https://pathcisionmedicine.com/',
-      logo: pathcision
+      logo: logos['./pathcision.png']
     },
-    { name: 'Leanplum', domain: 'leanplum.com', href: 'https://www.leanplum.com/', logo: leanplum },
-    { name: 'Saga', domain: 'saga.xyz', href: 'https://www.saga.xyz/', logo: saga },
-    { name: 'Dor', domain: 'getdor.com', href: 'https://www.getdor.com/', logo: dor }
+    {
+      name: 'Leanplum',
+      domain: 'leanplum.com',
+      href: 'https://www.leanplum.com/',
+      logo: logos['./leanplum.png']
+    },
+    {
+      name: 'Saga',
+      domain: 'saga.xyz',
+      href: 'https://www.saga.xyz/',
+      logo: logos['./saga.png']
+    },
+    {
+      name: 'Dor',
+      domain: 'getdor.com',
+      href: 'https://www.getdor.com/',
+      logo: logos['./dor.png']
+    }
   ];
 
   const team: Member[] = [
     {
       name: 'Tiffany Phan',
       role: 'Founder & Managing Partner',
-      photo: tiffany,
+      photo: photos['./tiffany-phan.jpeg'],
       bio: 'Tiffany Phan brings two decades of experience bridging institutional capital and high-growth technology. She previously co-managed a $4.5B portfolio at Stamos Capital Partners, leading global investment underwriting across hedge funds, private equity, and venture-backed companies.',
       more: 'Earlier, she oversaw $13B in client assets at Deutsche Bank’s investment management group.',
       extra: [
@@ -61,7 +90,7 @@
     {
       name: 'Ricky Fiel',
       role: 'Co-Founder & General Partner',
-      photo: ricky,
+      photo: photos['./ricky-fiel.jpeg'],
       bio: 'With more than 20 years of experience in executive leadership roles, Ricky brings a broad and diverse background across multiple roles and companies. He has played a key role in scaling high-growth tech organizations spanning SaaS, gaming, and crypto.',
       more: 'Since becoming a Limited Partner at Maple VC in 2018, Ricky has made significant investments in companies such as Deepen.AI, Leanplum, Saga, and GetDor (acquired by Constellation Labs).',
       linkedin: 'https://www.linkedin.com/in/rickyfiel'
@@ -69,7 +98,7 @@
     {
       name: 'Genevive Fiel',
       role: 'Founder & Managing Partner',
-      photo: genevive,
+      photo: photos['./genevive-fiel.jpeg'],
       bio: 'Genevive brings more than 10 years of expertise in People Operations. Having led Recruiting and HR functions across companies at various stages of startup growth on a global scale.',
       more: 'Her investment philosophy is deeply rooted in cultivating long term partnerships with Founders. As a strategic partner, supporting entrepreneurs not only in realizing their vision, but also in building foundational processes, scaling operations and helping recruit top-tier talent—positioning teams for sustainable growth and long-term impact.',
       linkedin: 'https://www.linkedin.com/in/genevive-fiel-4822866a'
@@ -206,7 +235,8 @@
           <enhanced:img
             src={company.logo}
             alt=""
-            sizes="(min-width: 1024px) 30vw, (min-width: 640px) 260px, 45vw"
+            sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 252px, calc(50vw - 28px)"
+            loading="lazy"
             class="block aspect-video h-auto w-full object-cover"
           />
           <span class="flex items-start justify-between gap-2 pt-4 lg:gap-4 lg:pt-6">
