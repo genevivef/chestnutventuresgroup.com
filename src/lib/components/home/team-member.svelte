@@ -1,10 +1,10 @@
 <script lang="ts" module>
-  import type { Picture } from '@sveltejs/enhanced-img';
+  import type { Snippet } from 'svelte';
 
   export type Member = {
     name: string;
     role: string;
-    photo: Picture;
+    photo: Snippet;
     /** Shown collapsed. */
     bio: string;
     /** Appended to the first paragraph when expanded. */
@@ -24,13 +24,7 @@
   let expanded = $state(false);
 </script>
 
-<enhanced:img
-  src={member.photo}
-  alt="Portrait of {member.name}"
-  sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 520px, calc(100vw - 40px)"
-  loading="lazy"
-  class="block aspect-square h-auto w-full bg-border object-cover"
-/>
+{@render member.photo()}
 <h3
   class="mt-4 mb-0.5 text-2xl leading-[1.2] font-medium tracking-[-0.018em] lg:mt-6 lg:mb-1 lg:text-[26px]"
 >
