@@ -27,7 +27,7 @@
 <enhanced:img
   src={member.photo}
   alt="Portrait of {member.name}"
-  sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 640px) 520px, calc(100vw - 40px)"
+  sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 520px, calc(100vw - 40px)"
   loading="lazy"
   class="block aspect-square h-auto w-full bg-border object-cover"
 />

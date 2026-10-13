@@ -206,7 +206,7 @@
           <enhanced:img
             src={company.logo}
             alt=""
-            sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 640px) 252px, calc(50vw - 28px)"
+            sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 252px, calc(50vw - 28px)"
             loading="lazy"
             class="block aspect-video h-auto w-full object-cover"
           />
