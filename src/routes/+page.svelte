@@ -12,6 +12,24 @@
   import Seo from '#lib/components/site/seo.svelte';
   import { origin, siteName } from '#lib/site.js';
   import TeamMember, { type Member } from '#lib/components/home/team-member.svelte';
+  import type { Picture } from '@sveltejs/enhanced-img';
+
+  // TODO: Switch back to a plain `?enhanced` import per image once @sveltejs/enhanced-img
+  // generates widths from an <enhanced:img>'s `sizes` for imported images too
+  // (https://github.com/sveltejs/kit/issues/12099). Until then imported images only get
+  // 1x/2x versions, so these globs request their widths explicitly.
+  const logos = import.meta.glob<Picture>('./*.png', {
+    base: '/src/lib/assets/portfolio',
+    eager: true,
+    import: 'default',
+    query: { enhanced: true, w: '1320;960;640;400' }
+  });
+  const photos = import.meta.glob<Picture>('./*.jpeg', {
+    base: '/src/lib/assets/team',
+    eager: true,
+    import: 'default',
+    query: { enhanced: true, w: '1040;800;560;400' }
+  });
 
   const fields = [
     { href: '#frontiers', label: 'Investing across frontiers', key: 'bg-violet-vivid' },
@@ -20,29 +38,49 @@
   ];
 
   const companies = [
-    { name: 'Deepen AI', domain: 'deepen.ai', href: 'https://www.deepen.ai/', logo: deepenLogo },
+    {
+      name: 'Deepen AI',
+      domain: 'deepen.ai',
+      href: 'https://www.deepen.ai/',
+      logo: logos['./deepen.png']
+    },
     {
       name: 'TransAstra',
       domain: 'transastra.com',
       href: 'https://transastra.com/',
-      logo: transastraLogo
+      logo: logos['./transastra.png']
     },
     {
       name: 'PathCision Medicine',
       domain: 'pathcisionmedicine.com',
       href: 'https://pathcisionmedicine.com/',
-      logo: pathcisionLogo
+      logo: logos['./pathcision.png']
     },
-    { name: 'Leanplum', domain: 'leanplum.com', href: 'https://www.leanplum.com/', logo: leanplumLogo },
-    { name: 'Saga', domain: 'saga.xyz', href: 'https://www.saga.xyz/', logo: sagaLogo },
-    { name: 'Dor', domain: 'getdor.com', href: 'https://www.getdor.com/', logo: dorLogo }
+    {
+      name: 'Leanplum',
+      domain: 'leanplum.com',
+      href: 'https://www.leanplum.com/',
+      logo: logos['./leanplum.png']
+    },
+    {
+      name: 'Saga',
+      domain: 'saga.xyz',
+      href: 'https://www.saga.xyz/',
+      logo: logos['./saga.png']
+    },
+    {
+      name: 'Dor',
+      domain: 'getdor.com',
+      href: 'https://www.getdor.com/',
+      logo: logos['./dor.png']
+    }
   ];
 
   const team: Member[] = [
     {
       name: 'Tiffany Phan',
       role: 'Founder & Managing Partner',
-      photo: tiffanyPhoto,
+      photo: photos['./tiffany-phan.jpeg'],
       bio: 'Tiffany Phan brings two decades of experience bridging institutional capital and high-growth technology. She previously co-managed a $4.5B portfolio at Stamos Capital Partners, leading global investment underwriting across hedge funds, private equity, and venture-backed companies.',
       more: 'Earlier, she oversaw $13B in client assets at Deutsche Bank’s investment management group.',
       extra: [
@@ -52,7 +90,7 @@
     {
       name: 'Ricky Fiel',
       role: 'Co-Founder & General Partner',
-      photo: rickyPhoto,
+      photo: photos['./ricky-fiel.jpeg'],
       bio: 'With more than 20 years of experience in executive leadership roles, Ricky brings a broad and diverse background across multiple roles and companies. He has played a key role in scaling high-growth tech organizations spanning SaaS, gaming, and crypto.',
       more: 'Since becoming a Limited Partner at Maple VC in 2018, Ricky has made significant investments in companies such as Deepen.AI, Leanplum, Saga, and GetDor (acquired by Constellation Labs).',
       linkedin: 'https://www.linkedin.com/in/rickyfiel'
@@ -60,7 +98,7 @@
     {
       name: 'Genevive Fiel',
       role: 'Founder & Managing Partner',
-      photo: genevivePhoto,
+      photo: photos['./genevive-fiel.jpeg'],
       bio: 'Genevive brings more than 10 years of expertise in People Operations. Having led Recruiting and HR functions across companies at various stages of startup growth on a global scale.',
       more: 'Her investment philosophy is deeply rooted in cultivating long term partnerships with Founders. As a strategic partner, supporting entrepreneurs not only in realizing their vision, but also in building foundational processes, scaling operations and helping recruit top-tier talent—positioning teams for sustainable growth and long-term impact.',
       linkedin: 'https://www.linkedin.com/in/genevive-fiel-4822866a'
@@ -194,7 +232,13 @@
     {#each companies as company (company.href)}
       <li>
         <a href={company.href} target="_blank" rel="noopener" class="group block">
-          {@render company.logo()}
+          <enhanced:img
+            src={company.logo}
+            alt=""
+            sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 252px, calc(50vw - 28px)"
+            loading="lazy"
+            class="block aspect-video h-auto w-full object-cover"
+          />
           <span class="flex items-start justify-between gap-2 pt-4 lg:gap-4 lg:pt-6">
             <span>
               <span
@@ -251,97 +295,3 @@
     </Button>
   </div>
 </section>
-
-<!--
-  Images are plain-path `<enhanced:img>` tags so enhanced-img reads `sizes` and generates
-  smaller versions.
--->
-{#snippet deepenLogo()}
-  <enhanced:img
-    src="#lib/assets/portfolio/deepen.png"
-    alt=""
-    sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 252px, calc(50vw - 28px)"
-    loading="lazy"
-    class="block aspect-video h-auto w-full object-cover"
-  />
-{/snippet}
-
-{#snippet transastraLogo()}
-  <enhanced:img
-    src="#lib/assets/portfolio/transastra.png"
-    alt=""
-    sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 252px, calc(50vw - 28px)"
-    loading="lazy"
-    class="block aspect-video h-auto w-full object-cover"
-  />
-{/snippet}
-
-{#snippet pathcisionLogo()}
-  <enhanced:img
-    src="#lib/assets/portfolio/pathcision.png"
-    alt=""
-    sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 252px, calc(50vw - 28px)"
-    loading="lazy"
-    class="block aspect-video h-auto w-full object-cover"
-  />
-{/snippet}
-
-{#snippet leanplumLogo()}
-  <enhanced:img
-    src="#lib/assets/portfolio/leanplum.png"
-    alt=""
-    sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 252px, calc(50vw - 28px)"
-    loading="lazy"
-    class="block aspect-video h-auto w-full object-cover"
-  />
-{/snippet}
-
-{#snippet sagaLogo()}
-  <enhanced:img
-    src="#lib/assets/portfolio/saga.png"
-    alt=""
-    sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 252px, calc(50vw - 28px)"
-    loading="lazy"
-    class="block aspect-video h-auto w-full object-cover"
-  />
-{/snippet}
-
-{#snippet dorLogo()}
-  <enhanced:img
-    src="#lib/assets/portfolio/dor.png"
-    alt=""
-    sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 252px, calc(50vw - 28px)"
-    loading="lazy"
-    class="block aspect-video h-auto w-full object-cover"
-  />
-{/snippet}
-
-{#snippet tiffanyPhoto()}
-  <enhanced:img
-    src="#lib/assets/team/tiffany-phan.jpeg"
-    alt="Portrait of Tiffany Phan"
-    sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 520px, calc(100vw - 40px)"
-    loading="lazy"
-    class="block aspect-square h-auto w-full bg-border object-cover"
-  />
-{/snippet}
-
-{#snippet rickyPhoto()}
-  <enhanced:img
-    src="#lib/assets/team/ricky-fiel.jpeg"
-    alt="Portrait of Ricky Fiel"
-    sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 520px, calc(100vw - 40px)"
-    loading="lazy"
-    class="block aspect-square h-auto w-full bg-border object-cover"
-  />
-{/snippet}
-
-{#snippet genevivePhoto()}
-  <enhanced:img
-    src="#lib/assets/team/genevive-fiel.jpeg"
-    alt="Portrait of Genevive Fiel"
-    sizes="(min-width: 1024px) min(30vw, 411px), (min-width: 560px) 520px, calc(100vw - 40px)"
-    loading="lazy"
-    class="block aspect-square h-auto w-full bg-border object-cover"
-  />
-{/snippet}
